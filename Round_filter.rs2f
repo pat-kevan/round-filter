@@ -13,6 +13,7 @@ meta { name = "Round filter"; description = "Offers an original color scheme wit
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -140,6 +141,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -173,6 +175,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3937,6 +3940,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5804,6 +5808,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5948,7 +5953,7 @@ type: boolean
 label: Dont let tier 3 items get filtered out or restyled in future modules
 group: Power User
 */
-#define VAR_VALUES_TIER_3_TERMINATE false
+#define VAR_VALUES_TIER_3_TERMINATE true
 
 /*@ define:input:item_tiers
 type: boolean
@@ -5961,6 +5966,7 @@ rule (VAR_VALUES_TIER_1_TERMINATE && ((value:>=VAR_VALUES_TIER_1_VALUE && value:
 rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:<VAR_VALUES_TIER_3_VALUE) || name:VAR_VALUES_TIER_2_SHOW)) {}
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
+
 
 
 
@@ -6019,6 +6025,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -6467,7 +6474,7 @@ group: Herblore
 exampleItem: Guam leaf
 exampleItemId: 249
 */
-#define VAR_CATEGORY_HERBS_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
+#define VAR_CATEGORY_HERBS_CUSTOMSTYLE textColor = "#ff15a100";menuTextColor = "#ff19be00";
 
 apply (name:CONST_ALL_HERBS) {
   VAR_CATEGORY_HERBS_CUSTOMSTYLE
@@ -6613,7 +6620,7 @@ group: Farming
 exampleItem: Guam seed
 exampleItemId: 5291
 */
-#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
+#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE textColor = "#ff15a100";menuTextColor = "#ff19be00";
 
 apply (name:CONST_FARMING_SEEDS_HERB_LIST) {
   VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE
@@ -6994,6 +7001,7 @@ exampleItem: Gilded platelegs
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 
 
@@ -9991,7 +9999,7 @@ label: Ranarr weed custom style
 group: Herbs Styles
 exampleItem: Ranarr weed
 */
-#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE
+#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#ff5dff5d";textAccentColor = "#FF000000";menuTextColor = "#ff5dff5d";textAccent = 1;
 
 apply (name:"*ranarr weed") {
     VAR_HERBS_RANARR_WEED_CUSTOMSTYLE 
@@ -10051,7 +10059,7 @@ label: Huasca custom style
 group: Herbs Styles
 exampleItem: Huasca
 */
-#define VAR_HERBS_HUASCA_CUSTOMSTYLE
+#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#ff5dff5d";textAccentColor = "#FF000000";menuTextColor = "#ff5dff5d";textAccent = 1;
 
 apply (name:"*huasca") {
     VAR_HERBS_HUASCA_CUSTOMSTYLE 
@@ -10063,7 +10071,7 @@ label: Snapdragon custom style
 group: Herbs Styles
 exampleItem: Snapdragon
 */
-#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE
+#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#ff5dff5d";textAccentColor = "#FF000000";menuTextColor = "#ff5dff5d";textAccent = 1;
 
 apply (name:"*snapdragon") {
     VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE 
@@ -10111,7 +10119,7 @@ label: Torstol custom style
 group: Herbs Styles
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#ff5dff5d";textAccentColor = "#FF000000";menuTextColor = "#ff5dff5d";textAccent = 1;
 
 apply (name:"*torstol") {
     VAR_HERBS_TORSTOL_CUSTOMSTYLE 
@@ -11577,6 +11585,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11632,6 +11641,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12422,6 +12432,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
