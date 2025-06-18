@@ -5809,7 +5809,7 @@ type: number
 label: Put items above this value in tier 1
 group: Tier 1
 */
-#define VAR_VALUES_TIER_1_VALUE 20000
+#define VAR_VALUES_TIER_1_VALUE 10000
 
 /*@ define:input:item_tiers
 type: stringlist
@@ -9925,7 +9925,7 @@ label: Air rune custom style
 group: Runes Styles
 exampleItem: Air rune
 */
-#define VAR_AIR_RUNE_CUSTOMSTYLE
+#define VAR_AIR_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Air rune") {
     VAR_AIR_RUNE_CUSTOMSTYLE 
@@ -9937,7 +9937,7 @@ label: Water rune custom style
 group: Runes Styles
 exampleItem: Water rune
 */
-#define VAR_WATER_RUNE_CUSTOMSTYLE
+#define VAR_WATER_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Water rune") {
     VAR_WATER_RUNE_CUSTOMSTYLE 
@@ -9949,7 +9949,7 @@ label: Earth rune custom style
 group: Runes Styles
 exampleItem: Earth rune
 */
-#define VAR_EARTH_RUNE_CUSTOMSTYLE
+#define VAR_EARTH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Earth rune") {
     VAR_EARTH_RUNE_CUSTOMSTYLE 
@@ -9961,7 +9961,7 @@ label: Fire rune custom style
 group: Runes Styles
 exampleItem: Fire rune
 */
-#define VAR_FIRE_RUNE_CUSTOMSTYLE
+#define VAR_FIRE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Fire rune") {
     VAR_FIRE_RUNE_CUSTOMSTYLE 
@@ -9973,7 +9973,7 @@ label: Mind rune custom style
 group: Runes Styles
 exampleItem: Mind rune
 */
-#define VAR_MIND_RUNE_CUSTOMSTYLE
+#define VAR_MIND_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Mind rune") {
     VAR_MIND_RUNE_CUSTOMSTYLE 
@@ -9985,7 +9985,7 @@ label: Body rune custom style
 group: Runes Styles
 exampleItem: Body rune
 */
-#define VAR_BODY_RUNE_CUSTOMSTYLE
+#define VAR_BODY_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Body rune") {
     VAR_BODY_RUNE_CUSTOMSTYLE 
@@ -9997,7 +9997,7 @@ label: Cosmic rune custom style
 group: Runes Styles
 exampleItem: Cosmic rune
 */
-#define VAR_COSMIC_RUNE_CUSTOMSTYLE
+#define VAR_COSMIC_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Cosmic rune") {
     VAR_COSMIC_RUNE_CUSTOMSTYLE 
@@ -10009,7 +10009,7 @@ label: Chaos rune custom style
 group: Runes Styles
 exampleItem: Chaos rune
 */
-#define VAR_CHAOS_RUNE_CUSTOMSTYLE
+#define VAR_CHAOS_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Chaos rune") {
     VAR_CHAOS_RUNE_CUSTOMSTYLE 
@@ -10021,7 +10021,7 @@ label: Nature rune custom style
 group: Runes Styles
 exampleItem: Nature rune
 */
-#define VAR_NATURE_RUNE_CUSTOMSTYLE
+#define VAR_NATURE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Nature rune") {
     VAR_NATURE_RUNE_CUSTOMSTYLE 
@@ -10033,7 +10033,7 @@ label: Law rune custom style
 group: Runes Styles
 exampleItem: Law rune
 */
-#define VAR_LAW_RUNE_CUSTOMSTYLE
+#define VAR_LAW_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Law rune") {
     VAR_LAW_RUNE_CUSTOMSTYLE 
@@ -10045,7 +10045,7 @@ label: Death rune custom style
 group: Runes Styles
 exampleItem: Death rune
 */
-#define VAR_DEATH_RUNE_CUSTOMSTYLE
+#define VAR_DEATH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Death rune") {
     VAR_DEATH_RUNE_CUSTOMSTYLE 
@@ -10057,7 +10057,7 @@ label: Sunfire rune custom style
 group: Runes Styles
 exampleItem: Sunfire rune
 */
-#define VAR_SUNFIRE_RUNE_CUSTOMSTYLE
+#define VAR_SUNFIRE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Sunfire rune") {
     VAR_SUNFIRE_RUNE_CUSTOMSTYLE 
@@ -10069,7 +10069,7 @@ label: Astral rune custom style
 group: Runes Styles
 exampleItem: Astral rune
 */
-#define VAR_ASTRAL_RUNE_CUSTOMSTYLE
+#define VAR_ASTRAL_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Astral rune") {
     VAR_ASTRAL_RUNE_CUSTOMSTYLE 
@@ -10081,7 +10081,7 @@ label: Blood rune custom style
 group: Runes Styles
 exampleItem: Blood rune
 */
-#define VAR_BLOOD_RUNE_CUSTOMSTYLE
+#define VAR_BLOOD_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Blood rune") {
     VAR_BLOOD_RUNE_CUSTOMSTYLE 
@@ -10093,7 +10093,7 @@ label: Soul rune custom style
 group: Runes Styles
 exampleItem: Soul rune
 */
-#define VAR_SOUL_RUNE_CUSTOMSTYLE
+#define VAR_SOUL_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Soul rune") {
     VAR_SOUL_RUNE_CUSTOMSTYLE 
@@ -10105,7 +10105,7 @@ label: Wrath rune custom style
 group: Runes Styles
 exampleItem: Wrath rune
 */
-#define VAR_WRATH_RUNE_CUSTOMSTYLE
+#define VAR_WRATH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Wrath rune") {
     VAR_WRATH_RUNE_CUSTOMSTYLE 
@@ -10117,7 +10117,7 @@ label: Mist rune custom style
 group: Runes Styles
 exampleItem: Mist rune
 */
-#define VAR_MIST_RUNE_CUSTOMSTYLE
+#define VAR_MIST_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Mist rune") {
     VAR_MIST_RUNE_CUSTOMSTYLE 
@@ -10129,7 +10129,7 @@ label: Dust rune custom style
 group: Runes Styles
 exampleItem: Dust rune
 */
-#define VAR_DUST_RUNE_CUSTOMSTYLE
+#define VAR_DUST_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Dust rune") {
     VAR_DUST_RUNE_CUSTOMSTYLE 
@@ -10141,7 +10141,7 @@ label: Mud rune custom style
 group: Runes Styles
 exampleItem: Mud rune
 */
-#define VAR_MUD_RUNE_CUSTOMSTYLE
+#define VAR_MUD_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Mud rune") {
     VAR_MUD_RUNE_CUSTOMSTYLE 
@@ -10153,7 +10153,7 @@ label: Smoke rune custom style
 group: Runes Styles
 exampleItem: Smoke rune
 */
-#define VAR_SMOKE_RUNE_CUSTOMSTYLE
+#define VAR_SMOKE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Smoke rune") {
     VAR_SMOKE_RUNE_CUSTOMSTYLE 
@@ -10165,7 +10165,7 @@ label: Steam rune custom style
 group: Runes Styles
 exampleItem: Steam rune
 */
-#define VAR_STEAM_RUNE_CUSTOMSTYLE
+#define VAR_STEAM_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Steam rune") {
     VAR_STEAM_RUNE_CUSTOMSTYLE 
@@ -10177,7 +10177,7 @@ label: Lava rune custom style
 group: Runes Styles
 exampleItem: Lava rune
 */
-#define VAR_LAVA_RUNE_CUSTOMSTYLE
+#define VAR_LAVA_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Lava rune") {
     VAR_LAVA_RUNE_CUSTOMSTYLE 
@@ -10190,7 +10190,7 @@ group: Runes Styles
 exampleItem: Aether rune
 exampleItemId: 30843
 */
-#define VAR_AETHER_RUNE_CUSTOMSTYLE
+#define VAR_AETHER_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e0dede";borderColor = "#00e0dede";textAccentColor = "#FF000000";menuTextColor = "#FFFFFFFF";
 
 apply (name:"Aether rune") {
   VAR_AETHER_RUNE_CUSTOMSTYLE 
