@@ -1784,7 +1784,7 @@ apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:"Aether rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
+apply (name:"Aether rune" && quantity:<VAR_AETHER_RUNE_MIN_QUANTITY) {
   hidden = true;
 }
 
@@ -1854,7 +1854,7 @@ apply (name:"Steam rune" && quantity:>=VAR_STEAM_RUNE_MIN_QUANTITY && VAR_RUNES_
 apply (name:"Lava rune" && quantity:>=VAR_LAVA_RUNE_MIN_QUANTITY && VAR_RUNES_SHOW_ABOVE_MIN_QUANTITY) {
   hidden = false;
 }
-apply (name:"Aether rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY && VAR_RUNES_SHOW_ABOVE_MIN_QUANTITY) {
+apply (name:"Aether rune" && quantity:<VAR_AETHER_RUNE_MIN_QUANTITY && VAR_RUNES_SHOW_ABOVE_MIN_QUANTITY) {
   hidden = false;
 }
 
