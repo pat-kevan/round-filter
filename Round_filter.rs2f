@@ -9,6 +9,7 @@ meta { name = "Round filter"; description = "Offers an original color scheme wit
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -132,6 +133,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 }
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -165,6 +167,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 /*@ define:module:filtering
@@ -3338,7 +3341,7 @@ apply (name:VAR_FARMING_SEEDS_FRUIT_TREE_SHOW) {
 
 /*@ define:input:farming_seeds
 type: enumlist
-label: Fruit tree seeds to force shown
+label: Hardwood/special tree seeds to force shown
 group: Farming seeds
 enum: [
   "Teak seed",
@@ -3350,7 +3353,7 @@ enum: [
   "Redwood tree seed"
 ]
 */
-#define VAR_FARMING_SEEDS_SPECIAL_TREE_SHOW []
+#define VAR_FARMING_SEEDS_SPECIAL_TREE_SHOW ["Teak seed","Mahogany seed","Calquat tree seed","Crystal acorn","Spirit seed","Celastrus seed","Redwood tree seed"]
 
 apply (name:VAR_FARMING_SEEDS_SPECIAL_TREE_SHOW) {
     hidden = false;
@@ -3919,6 +3922,7 @@ apply ((name:CONST_RUNE_ONE_HANDED_MELEE_WEAPONS || name:CONST_RUNE_TWO_HANDED_M
 apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_RANGED_WEAPONS || name:CONST_DRAGON_AMMO || name:CONST_DRAGON_ARMOUR) && name:VAR_METAL_EQUIPMENT_TIERS_HIDE && !name:CONST_DEFENDERS_LIST) {
     hidden = true;
 }
+
 
 
 /*@ define:module:area_based_filtering
@@ -5784,6 +5788,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 }
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5944,6 +5949,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -5995,6 +6001,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 /*@ define:module:item_category_styles
@@ -7242,6 +7249,7 @@ exampleItem: Gilded platelegs
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 
 /*@ define:module:individual_item_styles
@@ -11817,6 +11825,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 }
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11872,6 +11881,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 /*@ define:module:final
@@ -12658,6 +12668,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 /*@ define:module:constants
