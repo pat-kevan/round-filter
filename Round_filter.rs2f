@@ -6050,7 +6050,7 @@ group: Currency
 exampleItem: Coins
 exampleItemId: 1004
 */
-#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffdcb939";menuTextColor = "#ffdcb939";fontType = 2;
+#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffdcb939";menuTextColor = "#ffdcb939";fontType = 1;
 
 apply (name:CONST_CURRENCY_LIST) {
     VAR_CURRENCY_CUSTOMSTYLE 
