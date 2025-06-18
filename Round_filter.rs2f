@@ -12,6 +12,7 @@ meta { name = "Round filter"; description = "Offers an original color scheme wit
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -138,6 +139,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -171,6 +173,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3933,6 +3936,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5799,6 +5803,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5962,6 +5967,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6013,6 +6019,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -6460,7 +6467,7 @@ group: Herblore
 exampleItem: Guam leaf
 exampleItemId: 249
 */
-#define VAR_CATEGORY_HERBS_CUSTOMSTYLE
+#define VAR_CATEGORY_HERBS_CUSTOMSTYLE textColor = "#ff25df07";menuTextColor = "#ff25df07";
 
 apply (name:CONST_ALL_HERBS) {
   VAR_CATEGORY_HERBS_CUSTOMSTYLE
@@ -6606,7 +6613,7 @@ group: Farming
 exampleItem: Guam seed
 exampleItemId: 5291
 */
-#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE
+#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
 
 apply (name:CONST_FARMING_SEEDS_HERB_LIST) {
   VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE
@@ -6992,6 +6999,7 @@ apply (name:CONST_RUNE_GILDED) {
 
 
 
+
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7228,7 +7236,7 @@ exampleItem: Overload
 exampleItemId: 20996
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#FFFFFFFF";backgroundColor = "#50130F0F";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#a8ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ]) {
     VAR_COX_OVERLOAD_CUSTOMSTYLE 
@@ -7590,7 +7598,7 @@ label: Smelling salts
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#FFFFFFFF";backgroundColor = "#50130F0F";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#a8ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
     VAR_SMELLING_SALTS_CUSTOMSTYLE
@@ -9935,7 +9943,7 @@ label: Guam leaf custom style
 group: Herbs Styles
 exampleItem: Guam leaf
 */
-#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE
 
 apply (name:"*guam leaf") {
     VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE 
@@ -9947,7 +9955,7 @@ label: Marrentill custom style
 group: Herbs Styles
 exampleItem: Marrentill
 */
-#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE
 
 apply (name:"*marrentill") {
     VAR_HERBS_MARRENTILL_CUSTOMSTYLE 
@@ -9959,7 +9967,7 @@ label: Tarromin custom style
 group: Herbs Styles
 exampleItem: Tarromin
 */
-#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_TARROMIN_CUSTOMSTYLE
 
 apply (name:"*tarromin") {
     VAR_HERBS_TARROMIN_CUSTOMSTYLE 
@@ -9971,7 +9979,7 @@ label: Harralander custom style
 group: Herbs Styles
 exampleItem: Harralander
 */
-#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE
 
 apply (name:"*harralander") {
     VAR_HERBS_HARRALANDER_CUSTOMSTYLE 
@@ -9983,7 +9991,7 @@ label: Ranarr weed custom style
 group: Herbs Styles
 exampleItem: Ranarr weed
 */
-#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE
 
 apply (name:"*ranarr weed") {
     VAR_HERBS_RANARR_WEED_CUSTOMSTYLE 
@@ -9995,7 +10003,7 @@ label: Toadflax custom style
 group: Herbs Styles
 exampleItem: Toadflax
 */
-#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE
 
 apply (name:"*toadflax") {
     VAR_HERBS_TOADFLAX_CUSTOMSTYLE 
@@ -10007,7 +10015,7 @@ label: Irit leaf custom style
 group: Herbs Styles
 exampleItem: Irit leaf
 */
-#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE
 
 apply (name:"*irit leaf") {
     VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE 
@@ -10019,7 +10027,7 @@ label: Avantoe custom style
 group: Herbs Styles
 exampleItem: Avantoe
 */
-#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_AVANTOE_CUSTOMSTYLE
 
 apply (name:"*avantoe") {
     VAR_HERBS_AVANTOE_CUSTOMSTYLE 
@@ -10031,7 +10039,7 @@ label: Kwuarm custom style
 group: Herbs Styles
 exampleItem: Kwuarm
 */
-#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_KWUARM_CUSTOMSTYLE
 
 apply (name:"*kwuarm") {
     VAR_HERBS_KWUARM_CUSTOMSTYLE 
@@ -10043,7 +10051,7 @@ label: Huasca custom style
 group: Herbs Styles
 exampleItem: Huasca
 */
-#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_HUASCA_CUSTOMSTYLE
 
 apply (name:"*huasca") {
     VAR_HERBS_HUASCA_CUSTOMSTYLE 
@@ -10055,7 +10063,7 @@ label: Snapdragon custom style
 group: Herbs Styles
 exampleItem: Snapdragon
 */
-#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE
 
 apply (name:"*snapdragon") {
     VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE 
@@ -10067,7 +10075,7 @@ label: Cadantine custom style
 group: Herbs Styles
 exampleItem: Cadantine
 */
-#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_CADANTINE_CUSTOMSTYLE
 
 apply (name:"*cadantine") {
     VAR_HERBS_CADANTINE_CUSTOMSTYLE 
@@ -10079,7 +10087,7 @@ label: Lantadyme custom style
 group: Herbs Styles
 exampleItem: Lantadyme
 */
-#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";fontType = 1;showLootbeam = false;
+#define VAR_HERBS_LANTADYME_CUSTOMSTYLE 
 
 apply (name:"*lantadyme") {
     VAR_HERBS_LANTADYME_CUSTOMSTYLE 
@@ -10091,7 +10099,7 @@ label: Dwarf weed custom style
 group: Herbs Styles
 exampleItem: Dwarf weed
 */
-#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE
 
 apply (name:"*dwarf weed") {
     VAR_HERBS_DWARF_WEED_CUSTOMSTYLE 
@@ -10103,7 +10111,7 @@ label: Torstol custom style
 group: Herbs Styles
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff6fd142";showLootbeam = false;
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE 
 
 apply (name:"*torstol") {
     VAR_HERBS_TORSTOL_CUSTOMSTYLE 
@@ -11568,6 +11576,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11623,6 +11632,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12412,6 +12422,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
