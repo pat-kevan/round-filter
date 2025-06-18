@@ -8,6 +8,7 @@ name: header
 meta { name = "Round filter"; description = "Offers an original color scheme with extensive support for category-based styling/filtering."; }
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -130,6 +131,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
     icon = CurrentItem();
 }
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -163,6 +165,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 /*@ define:module:filtering
 ---
@@ -1537,35 +1540,35 @@ type: number
 label: Water rune minimum quantity
 group: Runes
 */
-#define VAR_WATER_RUNE_MIN_QUANTITY 500
+#define VAR_WATER_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Earth rune minimum quantity
 group: Runes
 */
-#define VAR_EARTH_RUNE_MIN_QUANTITY 500
+#define VAR_EARTH_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Fire rune minimum quantity
 group: Runes
 */
-#define VAR_FIRE_RUNE_MIN_QUANTITY 500
+#define VAR_FIRE_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Mind rune minimum quantity
 group: Runes
 */
-#define VAR_MIND_RUNE_MIN_QUANTITY 500
+#define VAR_MIND_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Body rune minimum quantity
 group: Runes
 */
-#define VAR_BODY_RUNE_MIN_QUANTITY 500
+#define VAR_BODY_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
@@ -1642,42 +1645,42 @@ type: number
 label: Mist rune minimum quantity
 group: Runes
 */
-#define VAR_MIST_RUNE_MIN_QUANTITY 50
+#define VAR_MIST_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
 label: Dust rune minimum quantity
 group: Runes
 */
-#define VAR_DUST_RUNE_MIN_QUANTITY 50
+#define VAR_DUST_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
 label: Mud rune minimum quantity
 group: Runes
 */
-#define VAR_MUD_RUNE_MIN_QUANTITY 50
+#define VAR_MUD_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
 label: Smoke rune minimum quantity
 group: Runes
 */
-#define VAR_SMOKE_RUNE_MIN_QUANTITY 50
+#define VAR_SMOKE_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
 label: Steam rune minimum quantity
 group: Runes
 */
-#define VAR_STEAM_RUNE_MIN_QUANTITY 50
+#define VAR_STEAM_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
 label: Lava rune minimum quantity
 group: Runes
 */
-#define VAR_LAVA_RUNE_MIN_QUANTITY 50
+#define VAR_LAVA_RUNE_MIN_QUANTITY 10
 
 /*@ define:input:runes
 type: number
@@ -2357,7 +2360,7 @@ enum: [
   "Karambwan vessel"
 ]
 */
-#define VAR_FISHING_EQUIPMENT_HIDE ["Small fishing net","Big fishing net","Fishing rod","Fly fishing rod","Harpoon","Lobster pot","Karambwan vessel"]
+#define VAR_FISHING_EQUIPMENT_HIDE ["Big fishing net","Fishing rod","Fly fishing rod","Harpoon","Lobster pot","Karambwan vessel"]
 
 apply (name:VAR_FISHING_EQUIPMENT_HIDE) {
     hidden = true;
@@ -2378,7 +2381,7 @@ enum: [
   "Raw karambwanji"
 ]
 */
-#define VAR_FISHING_BAIT_HIDE ["Fishing bait","Feather","Stripy feather","King worm","Fish chunks"]
+#define VAR_FISHING_BAIT_HIDE []
 
 apply (name:VAR_FISHING_BAIT_HIDE) {
     hidden = true;
@@ -2428,7 +2431,7 @@ enum: [
   "Raw karambwan"
 ]
 */
-#define VAR_FISHING_RAW_FISH_HIDE ["Raw shrimps","Raw anchovies","Raw guppy","Raw cavefish","Raw tetra","Frog spawn","Raw mackerel","Raw cod","Raw bass","Raw sardine","Raw herring","Raw pike","Raw trout","Raw salmon","Raw rainbow fish","Leaping trout","Leaping salmon","Leaping sturgeon","Raw tuna","Bluegill","Common tench","Mottled eel","Greater siren"]
+#define VAR_FISHING_RAW_FISH_HIDE ["Raw shrimps","Raw anchovies","Raw guppy","Raw cavefish","Raw tetra","Frog spawn","Raw mackerel","Raw cod","Raw bass","Raw sardine","Raw herring","Raw pike","Raw trout","Raw salmon","Raw rainbow fish","Leaping trout","Leaping salmon","Leaping sturgeon","Raw tuna","Bluegill","Common tench","Mottled eel","Greater siren","Raw swordfish"]
 
 apply (name:VAR_FISHING_RAW_FISH_HIDE) {
     hidden = true;
@@ -3147,26 +3150,6 @@ enum: [
 #define VAR_FARMING_SEEDS_FRUIT_TREE_HIDE ["Apple seed","Banana seed","Orange seed","Curry seed","Pineapple seed"]
 
 apply (name:VAR_FARMING_SEEDS_FRUIT_TREE_HIDE) {
-    hidden = true;
-}
-
-/*@ define:input:farming_seeds
-type: enumlist
-label: Fruit tree seeds to force hidden
-group: Farming seeds
-enum: [
-  "Teak seed",
-  "Mahogany seed",
-  "Calquat tree seed",
-  "Crystal acorn",
-  "Spirit seed",
-  "Celastrus seed",
-  "Redwood tree seed"
-]
-*/
-#define VAR_FARMING_SEEDS_SPECIAL_TREE_HIDE ["Teak seed","Mahogany seed","Calquat tree seed"]
-
-apply (name:VAR_FARMING_SEEDS_SPECIAL_TREE_HIDE) {
     hidden = true;
 }
 
@@ -3936,6 +3919,7 @@ apply ((name:CONST_RUNE_ONE_HANDED_MELEE_WEAPONS || name:CONST_RUNE_TWO_HANDED_M
 apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_RANGED_WEAPONS || name:CONST_DRAGON_AMMO || name:CONST_DRAGON_ARMOUR) && name:VAR_METAL_EQUIPMENT_TIERS_HIDE && !name:CONST_DEFENDERS_LIST) {
     hidden = true;
 }
+
 
 /*@ define:module:area_based_filtering
 ---
@@ -5799,6 +5783,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
     hidden = true;
 }
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5887,7 +5872,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";fontType = 2;menuTextColor = "#FFFF9600";textAccent = 1;showLootbeam = true;
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5916,7 +5901,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";sound = 6765;menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -5956,6 +5941,7 @@ rule (VAR_VALUES_TIER_1_TERMINATE && ((value:>=VAR_VALUES_TIER_1_VALUE && value:
 rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:<VAR_VALUES_TIER_3_VALUE) || name:VAR_VALUES_TIER_2_SHOW)) {}
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
+
 
 
 /*@ define:module:uniques
@@ -6009,6 +5995,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 /*@ define:module:item_category_styles
 ---
@@ -7255,6 +7242,7 @@ exampleItem: Gilded platelegs
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 /*@ define:module:individual_item_styles
 ---
@@ -11828,6 +11816,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
     VAR_GAUNTLET_CRYSTAL_LEGS_CUSTOMSTYLE 
 }
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11883,6 +11872,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 /*@ define:module:final
 hidden: true
@@ -12668,6 +12658,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 /*@ define:module:constants
 hidden: true
