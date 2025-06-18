@@ -6467,7 +6467,7 @@ group: Herblore
 exampleItem: Guam leaf
 exampleItemId: 249
 */
-#define VAR_CATEGORY_HERBS_CUSTOMSTYLE textColor = "#ff25df07";menuTextColor = "#ff25df07";
+#define VAR_CATEGORY_HERBS_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
 
 apply (name:CONST_ALL_HERBS) {
   VAR_CATEGORY_HERBS_CUSTOMSTYLE
@@ -7096,7 +7096,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (easy)
 exampleItemId: 2677
 */
-#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FF248F26";backgroundColor = "#008f7f61";borderColor = "#00248f25";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
+#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FF248F26";backgroundColor = "#5eededed";borderColor = "#00248f25";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
 
 apply (name:"Clue scroll (easy)") {
     VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
@@ -7109,7 +7109,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (medium)
 exampleItemId: 2801
 */
-#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF6CBBBF";backgroundColor = "#008f7f61";borderColor = "#006dbbbf";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
+#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF6CBBBF";backgroundColor = "#008f7f61";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
 
 apply (name:"Clue scroll (medium)") {
     VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
@@ -7122,7 +7122,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (hard)
 exampleItemId: 2722
 */
-#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFA343BD";backgroundColor = "#008f7f61";borderColor = "#00a242bd";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
+#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFA343BD";backgroundColor = "#5eededed";borderColor = "#00a242bd";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
 
 apply (name:"Clue scroll (hard)") {
     VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
@@ -7135,7 +7135,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (elite)
 exampleItemId: 12073
 */
-#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#008f7f61";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
+#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#5eededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
 
 apply (name:"Clue scroll (elite)") {
     VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
@@ -7148,7 +7148,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (master)
 exampleItemId: 19835
 */
-#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFC33C30";backgroundColor = "#008f7f61";borderColor = "#00c23d30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFC33C30";backgroundColor = "#5eededed";borderColor = "#00c23d30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
@@ -7264,7 +7264,7 @@ exampleItem: Revitalisation potion
 exampleItemId: 20960
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_REVITALISATION_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#12a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
+#define VAR_COX_REVITALISATION_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#00a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
 
 apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ]) {
     VAR_COX_REVITALISATION_CUSTOMSTYLE 
@@ -7390,7 +7390,7 @@ exampleItem: Grimy golpar
 exampleItemId: 20904
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff7493a2";
 
 apply (area:CONST_COX_AREA && name:"Grimy golpar") {
     VAR_GRIMY_GOLPAR_CUSTOMSTYLE 
@@ -7404,7 +7404,7 @@ exampleItem: Grimy buchu leaf
 exampleItemId: 20907
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff19be00";
 
 apply (area:CONST_COX_AREA && name:"Grimy buchu leaf") {
     VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE 
@@ -7418,7 +7418,7 @@ exampleItem: Grimy noxifer
 exampleItemId: 20901
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff9100df";
 
 apply (area:CONST_COX_AREA && name:"Grimy noxifer") {
     VAR_GRIMY_NOXIFER_CUSTOMSTYLE 
@@ -7432,7 +7432,7 @@ exampleItem: Golpar
 exampleItemId: 20905
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff7493a2";
 
 apply (area:CONST_COX_AREA && name:"golpar") {
     VAR_GOLPAR_CUSTOMSTYLE 
@@ -7446,7 +7446,7 @@ exampleItem: Buchu leaf
 exampleItemId: 20908
 backgroundImage: Chambers of Xeric
 */
-#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff19be00";
 
 apply (area:CONST_COX_AREA && name:"buchu leaf") {
     VAR_BUCHU_LEAF_CUSTOMSTYLE 
@@ -7460,7 +7460,7 @@ exampleItem: Noxifer
 exampleItemId: 20902
 backgroundImage: Chambers of Xeric
 */
-#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff9100df";
 
 apply (area:CONST_COX_AREA && name:"noxifer") {
     VAR_NOXIFER_CUSTOMSTYLE 
@@ -7474,7 +7474,7 @@ exampleItem: Endarkened juice
 exampleItemId: 20911
 backgroundImage: Chambers of Xeric
 */
-#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE hidden = false;textColor = "#ffbe50fa";backgroundColor = "#007638e0";borderColor = "#007638e0";textAccentColor = "#FF000000";menuTextColor = "#ffbe50fa";
+#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE hidden = false;textColor = "#ffcf85f6";backgroundColor = "#007638e0";borderColor = "#007638e0";textAccentColor = "#FF000000";menuTextColor = "#ffcf85f6";
 
 apply (area:CONST_COX_AREA && name:"Endarkened juice") {
     VAR_ENDARKENED_JUICE_CUSTOMSTYLE 
@@ -7488,7 +7488,7 @@ exampleItem: Stinkhorn mushroom
 exampleItemId: 20910
 backgroundImage: Chambers of Xeric
 */
-#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#FF6d3532";backgroundColor = "#006e3431";borderColor = "#006e3431";textAccentColor = "#FF000000";menuTextColor = "#FF6d3532";
+#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#ffd95b55";backgroundColor = "#006e3431";borderColor = "#006e3431";textAccentColor = "#FF000000";menuTextColor = "#ffd95b55";
 
 apply (area:CONST_COX_AREA && name:"Stinkhorn mushroom") {
     VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE 
@@ -7502,7 +7502,7 @@ exampleItem: Cicely
 exampleItemId: 20912
 backgroundImage: Chambers of Xeric
 */
-#define VAR_CICELY_CUSTOMSTYLE hidden = false;textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_CICELY_CUSTOMSTYLE hidden = false;textColor = "#ff81a86e";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff81a86e";
 
 apply (area:CONST_COX_AREA && name:"Cicely") {
     VAR_CICELY_CUSTOMSTYLE 
@@ -7530,7 +7530,7 @@ exampleItem: Cavern grubs
 exampleItemId: 20885
 backgroundImage: Chambers of Xeric
 */
-#define VAR_CAVERN_GRUBS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#009e7655";borderColor = "#009e7655";textAccentColor = "#FF000000";menuTextColor = "#FFcfbbaa";
+#define VAR_CAVERN_GRUBS_CUSTOMSTYLE hidden = true;
 
 apply (area:CONST_COX_AREA && name:"Cavern grubs") {
     VAR_CAVERN_GRUBS_CUSTOMSTYLE 
@@ -7572,7 +7572,7 @@ group: Theatre of Blood Styles
 exampleItem: Dawnbringer
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00ad63a7";borderColor = "#00b8a12e";textAccentColor = "#FF000000";menuTextColor = "#FFad62a7";
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#fffe1cb7";backgroundColor = "#5eededed";borderColor = "#00b8a12e";textAccentColor = "#FF000000";menuTextColor = "#fffe1cb7";
 
 /*@ define:input:individual_item_styles
 type: style
@@ -7581,7 +7581,7 @@ group: Theatre of Blood Styles
 exampleItem: Salve amulet (e)
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00e39db2";borderColor = "#00f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5eededed";borderColor = "#00f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
 
 apply (name:"Dawnbringer") {
     VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
@@ -10087,7 +10087,7 @@ label: Lantadyme custom style
 group: Herbs Styles
 exampleItem: Lantadyme
 */
-#define VAR_HERBS_LANTADYME_CUSTOMSTYLE 
+#define VAR_HERBS_LANTADYME_CUSTOMSTYLE
 
 apply (name:"*lantadyme") {
     VAR_HERBS_LANTADYME_CUSTOMSTYLE 
@@ -10111,7 +10111,7 @@ label: Torstol custom style
 group: Herbs Styles
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE 
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE
 
 apply (name:"*torstol") {
     VAR_HERBS_TORSTOL_CUSTOMSTYLE 
