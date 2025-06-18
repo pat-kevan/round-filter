@@ -1690,7 +1690,7 @@ type: number
 label: Aether rune minimum quantity
 group: Runes
 */
-#define VAR_AETHER_RUNE_MIN_QUANTITY 0
+#define VAR_AETHER_RUNE_MIN_QUANTITY 1
 
 apply (name:VAR_RUNES_HIDE) {
     hidden = true;
