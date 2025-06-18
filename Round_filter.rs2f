@@ -5877,7 +5877,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5906,7 +5906,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -5964,7 +5964,7 @@ label: Uniques custom style
 exampleItem: Tanzanite fang
 exampleItemId: 12922
 */
-#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";fontType = 2;showLootbeam = true;sound = 6765;
+#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 
 
