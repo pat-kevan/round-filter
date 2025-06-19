@@ -5,14 +5,7 @@ name: header
 
 /* Built on: Thu Jun 12 21:06:09 UTC 2025 */
 /* Commit: dc74555 */
-meta { name = "Round filter"; description = "Offers an original color scheme with extensive support for category-based styling/filtering."; }
-
-
-
-
-
-
-
+meta { name = "Round filter"; description = "Modified version of Joe's filter with some complexity removed and de-emphasis on backgrounds and borders"; }
 
 /*@ define:module:default_styling
 ---
@@ -136,12 +129,6 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
     icon = CurrentItem();
 }
 
-
-
-
-
-
-
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -176,12 +163,6 @@ label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
 
-
-
-
-
-
-
 /*@ define:module:filtering
 ---
 name: Filtering
@@ -189,7 +170,6 @@ subtitle: Sifting through the junk
 description: |
   Provides a few different ways to filter out items.
 */
-
 
 /*@ define:input:filtering
 type: stringlist
@@ -212,7 +192,6 @@ group: Individual Items
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
 }
-
 
 /*@ define:input:filtering
 type: number
@@ -3941,6 +3920,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5809,6 +5789,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5897,7 +5878,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5926,7 +5907,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -5953,7 +5934,7 @@ type: boolean
 label: Dont let tier 3 items get filtered out or restyled in future modules
 group: Power User
 */
-#define VAR_VALUES_TIER_3_TERMINATE true
+#define VAR_VALUES_TIER_3_TERMINATE false
 
 /*@ define:input:item_tiers
 type: boolean
@@ -5966,6 +5947,7 @@ rule (VAR_VALUES_TIER_1_TERMINATE && ((value:>=VAR_VALUES_TIER_1_VALUE && value:
 rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:<VAR_VALUES_TIER_3_VALUE) || name:VAR_VALUES_TIER_2_SHOW)) {}
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
+
 
 
 
@@ -5988,7 +5970,7 @@ label: Uniques custom style
 exampleItem: Tanzanite fang
 exampleItemId: 12922
 */
-#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";backgroundColor = "#33ededed";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 
 
@@ -6025,6 +6007,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -7008,6 +6991,7 @@ apply (name:CONST_RUNE_GILDED) {
 
 
 
+
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7025,7 +7009,7 @@ group: Misc Styles
 exampleItem: Ancient blood ornament kit
 exampleItemId: 28336
 */
-#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#FFb02315";backgroundColor = "#901a1818";borderColor = "#FF1a1818";textAccentColor = "#FF000000";lootbeamColor = "#ffb02315";menuTextColor = "#FFb02315";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Ancient blood ornament kit") {
     VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE 
@@ -7038,7 +7022,7 @@ group: Misc Styles
 exampleItem: Purifying sigil
 exampleItemId: 30793
 */
-#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#90d0d0d0";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";lootbeamColor = "#ffd0d0d0";menuTextColor = "#FFFFFFFF";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Purifying sigil*") {
     VAR_PURIFYING_SIGIL_CUSTOMSTYLE 
@@ -7051,7 +7035,7 @@ group: Misc Styles
 exampleItem: "Avernic defender"
 exampleItemId: 24186
 */
-#define VAR_AVERNIC_DEFENDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#9077776e";borderColor = "#FF1f1c1c";textAccentColor = "#FF000000";lootbeamColor = "#FF1f1c1c";menuTextColor = "#FF000000";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_AVERNIC_DEFENDER_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Avernic defender*") {
   VAR_AVERNIC_DEFENDER_CUSTOMSTYLE 
@@ -7064,7 +7048,7 @@ group: Misc Styles
 exampleItem: "Ghommal's avernic defender 5"
 exampleItemId: 27550
 */
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#9077776e";borderColor = "#FF4c0c08";textAccentColor = "#FF000000";lootbeamColor = "#FF4c0c08";menuTextColor = "#FF4c0c08";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Ghommal's avernic defender 5*") {
   VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE 
@@ -7077,7 +7061,7 @@ group: Misc Styles
 exampleItem: "Ghommal's avernic defender 6"
 exampleItemId: 27552
 */
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#9077776e";borderColor = "#FFf6be3f";textAccentColor = "#FF000000";lootbeamColor = "#FFf6be3f";menuTextColor = "#FFf6be3f";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Ghommal's avernic defender 6*") {
   VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE 
@@ -7091,7 +7075,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (beginner)
 exampleItemId: 23182
 */
-#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#008f7f61";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";
+#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";icon = CurrentItem();
 
 apply (name:"Clue scroll (beginner)") {
     VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE 
@@ -7104,7 +7088,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (easy)
 exampleItemId: 2677
 */
-#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FF248F26";backgroundColor = "#5eededed";borderColor = "#00248f25";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
+#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FF248F26";backgroundColor = "#33ededed";borderColor = "#00248f25";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";icon = CurrentItem();
 
 apply (name:"Clue scroll (easy)") {
     VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
@@ -7117,7 +7101,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (medium)
 exampleItemId: 2801
 */
-#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF6CBBBF";backgroundColor = "#008f7f61";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
+#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF6CBBBF";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";icon = CurrentItem();
 
 apply (name:"Clue scroll (medium)") {
     VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
@@ -7130,7 +7114,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (hard)
 exampleItemId: 2722
 */
-#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFA343BD";backgroundColor = "#5eededed";borderColor = "#00a242bd";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
+#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFA343BD";backgroundColor = "#33ededed";borderColor = "#00a242bd";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";icon = CurrentItem();
 
 apply (name:"Clue scroll (hard)") {
     VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
@@ -7143,7 +7127,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (elite)
 exampleItemId: 12073
 */
-#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#5eededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
+#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";icon = CurrentItem();
 
 apply (name:"Clue scroll (elite)") {
     VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
@@ -7156,7 +7140,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (master)
 exampleItemId: 19835
 */
-#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFC33C30";backgroundColor = "#5eededed";borderColor = "#00c23d30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFC33C30";backgroundColor = "#33ededed";borderColor = "#00c23d30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";icon = CurrentItem();
 
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
@@ -7169,7 +7153,7 @@ label: Larran's key
 group: Slayer Styles
 exampleItem: Larran's key
 */
-#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50ae9815";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFfada1e";showLootbeam = true;
+#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";showLootbeam = true;
 
 apply (name:"Larran's key") {
     VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE 
@@ -7181,34 +7165,10 @@ label: Brimstone key
 group: Slayer Styles
 exampleItem: Brimstone key
 */
-#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5026636b";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FF41a9b7";showLootbeam = true;
+#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Brimstone key") {
     VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_item_styles
-type: style
-label: Dust battlestaff
-group: Slayer Styles
-exampleItem: Dust battlestaff
-*/
-#define VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5071603f";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFbda069";showLootbeam = true;
-
-apply (name:"Dust battlestaff") {
-    VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_item_styles
-type: style
-label: Mist battlestaff
-group: Slayer Styles
-exampleItem: Mist battlestaff
-*/
-#define VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50847a83";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFd0c0ce";showLootbeam = true;
-
-apply (name:"Mist battlestaff") {
-    VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_item_styles
@@ -7217,7 +7177,7 @@ label: Eternal gem
 group: Slayer Styles
 exampleItem: Eternal gem
 */
-#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5036aebc";borderColor = "#FF9fc34a";textAccentColor = "#FF000000";menuTextColor = "#FF36aebc";showLootbeam = true;
+#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Eternal gem") {
     VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE 
@@ -7229,7 +7189,7 @@ label: Imbued heart
 group: Slayer Styles
 exampleItem: Imbued heart
 */
-#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5061374a";borderColor = "#FF432e43";textAccentColor = "#FF000000";menuTextColor = "#FFad6284";showLootbeam = true;
+#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Imbued heart") {
     VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE 
@@ -7580,7 +7540,7 @@ group: Theatre of Blood Styles
 exampleItem: Dawnbringer
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#fffe1cb7";backgroundColor = "#5eededed";borderColor = "#00b8a12e";textAccentColor = "#FF000000";menuTextColor = "#fffe1cb7";
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ffadf3ff";backgroundColor = "#33ededed";borderColor = "#00b8a12e";textAccentColor = "#FF000000";menuTextColor = "#ffadf3ff";fontType = 2;
 
 /*@ define:input:individual_item_styles
 type: style
@@ -7589,7 +7549,7 @@ group: Theatre of Blood Styles
 exampleItem: Salve amulet (e)
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5eededed";borderColor = "#00f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";borderColor = "#00f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
 
 apply (name:"Dawnbringer") {
     VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
@@ -11586,6 +11546,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11641,6 +11602,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12432,6 +12394,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
