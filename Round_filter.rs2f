@@ -9,6 +9,7 @@ meta { name = "Round filter"; description = "Modified version of Joe's filter wi
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -133,6 +134,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -166,6 +168,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3929,6 +3932,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5800,6 +5804,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5968,6 +5973,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6019,6 +6025,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -7005,11 +7012,12 @@ label: All Yama Contracts
 group: Yama Contracts
 exampleItem: Contract of bloodied blows
 */
-#define VAR_YAMA_CONTRACTS_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#33ededed";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;icon = CurrentItem();
+#define VAR_YAMA_CONTRACTS_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";backgroundColor = "#33ededed";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";textAccent = 1;fontType = 1;showLootbeam = true;sound = 932;icon = CurrentItem();
 
 apply (name:CONST_YAMA_CONTRACTS_LIST) {
     VAR_YAMA_CONTRACTS_CUSTOMSTYLE
 }
+
 
 
 
@@ -11576,6 +11584,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11631,6 +11640,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12425,6 +12435,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
