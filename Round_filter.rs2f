@@ -7,6 +7,7 @@ name: header
 /* Commit: dc74555 */
 meta { name = "Round filter"; description = "Modified version of Joe's filter with some complexity removed and de-emphasis on backgrounds and borders"; }
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -129,6 +130,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
     icon = CurrentItem();
 }
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -162,6 +164,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 /*@ define:module:filtering
 ---
@@ -3921,6 +3924,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5790,6 +5794,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5956,6 +5961,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6007,6 +6013,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -6992,6 +6999,7 @@ apply (name:CONST_RUNE_GILDED) {
 
 
 
+
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7153,7 +7161,7 @@ label: Larran's key
 group: Slayer Styles
 exampleItem: Larran's key
 */
-#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";showLootbeam = true;
+#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#ffe3ff00";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#ffe3ff00";showLootbeam = true;
 
 apply (name:"Larran's key") {
     VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE 
@@ -7165,7 +7173,7 @@ label: Brimstone key
 group: Slayer Styles
 exampleItem: Brimstone key
 */
-#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";showLootbeam = true;icon = CurrentItem();
+#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#ffe3ff00";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#ffe3ff00";showLootbeam = true;
 
 apply (name:"Brimstone key") {
     VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE 
@@ -11547,6 +11555,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11602,6 +11611,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12394,6 +12404,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
