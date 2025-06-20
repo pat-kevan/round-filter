@@ -3144,13 +3144,13 @@ enum: [
   "Banana tree seed",
   "Orange tree seed",
   "Curry tree seed",
-  "Pineapple tree seed",
+  "Pineapple seed",
   "Papaya tree seed",
-  "Palm tree tree seed",
+  "Palm tree seed",
   "Dragonfruit tree seed"
 ]
 */
-#define VAR_FARMING_SEEDS_FRUIT_TREE_HIDE ["Apple tree seed","Banana tree seed","Orange tree seed","Curry tree seed","Pineapple tree seed"]
+#define VAR_FARMING_SEEDS_FRUIT_TREE_HIDE ["Apple tree seed","Banana tree seed","Orange tree seed","Curry tree seed","Pineapple seed"]
 
 apply (name:VAR_FARMING_SEEDS_FRUIT_TREE_HIDE) {
     hidden = true;
@@ -3323,14 +3323,14 @@ type: enumlist
 label: Fruit tree seeds to force shown
 group: Farming seeds
 enum: [
-  "Apple seed",
-  "Banana seed",
-  "Orange seed",
-  "Curry seed",
+  "Apple tree seed",
+  "Banana tree seed",
+  "Orange tree seed",
+  "Curry tree seed",
   "Pineapple seed",
-  "Papaya seed",
+  "Papaya tree seed",
   "Palm tree seed",
-  "Dragonfruit seed"
+  "Dragonfruit tree seed"
 ]
 */
 #define VAR_FARMING_SEEDS_FRUIT_TREE_SHOW []
@@ -12561,11 +12561,11 @@ name: Constants
 
 #define CONST_FARMING_SEEDS_BUSH_LIST [   "Redberry seed",   "Cadavaberry seed",   "Dwellberry seed",   "Jangerberry seed",   "Whiteberry seed",   "Poison ivy seed", ]
 
-#define CONST_FARMING_SEEDS_TREE_LIST [   "Acorn",   "Willow tree seed",   "Maple tree seed",   "Yew tree seed",   "Magic tree seed", ]
+#define CONST_FARMING_SEEDS_TREE_LIST [   "Acorn",   "Willow seed",   "Maple seed",   "Yew seed",   "Magic seed", ]
 
-#define CONST_FARMING_SEEDS_FRUIT_TREE_LIST [   "Apple tree seed",   "Banana tree seed",   "Orange tree seed",   "Curry tree seed",   "Pineapple tree seed",   "Papaya tree seed",   "Palm tree seed",   "Dragonfruit tree seed", ]
+#define CONST_FARMING_SEEDS_FRUIT_TREE_LIST [   "Apple tree seed",   "Banana tree seed",   "Orange tree seed",   "Curry tree seed",   "Pineapple seed",   "Papaya tree seed",   "Palm tree seed",   "Dragonfruit tree seed", ]
 
-#define CONST_FARMING_SEEDS_SPECIAL_TREE_LIST [   "Teak tree seed",   "Mahogany tree seed",   "Calquat tree seed",   "Crystal acorn",   "Spirit seed",   "Celastrus seed",   "Redwood tree seed", ]
+#define CONST_FARMING_SEEDS_SPECIAL_TREE_LIST [   "Teak seed",   "Mahogany seed",   "Calquat tree seed",   "Crystal acorn",   "Spirit seed",   "Celastrus seed",   "Redwood tree seed", ]
 
 #define CONST_FARMING_SEEDS_SPECIAL_LIST [   "Seaweed spore",   "Grape seed",   "Mushroom spore",   "Belladonna seed",   "Hespori seed",   "Cactus seed",   "Potato cactus seed", ]
 
