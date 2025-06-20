@@ -5893,7 +5893,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#33ededed";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;icon = CurrentItem();
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#33ededed";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5922,7 +5922,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -7239,7 +7239,7 @@ exampleItem: Overload
 exampleItemId: 20996
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#a8ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ]) {
     VAR_COX_OVERLOAD_CUSTOMSTYLE 
