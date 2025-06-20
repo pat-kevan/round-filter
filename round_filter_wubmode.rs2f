@@ -5,7 +5,7 @@ name: header
 
 /* Built on: Thu Jun 12 21:06:09 UTC 2025 */
 /* Commit: dc74555 */
-meta { name = "Round filter (Wub's version)"; description = "Modified version of Joe's filter with some complexity removed and de-emphasis on backgrounds and borders"; }
+meta { name = "Round filter - Wub version"; description = "Modified version of Joe's filter with some complexity removed and de-emphasis on backgrounds and borders"; }
 
 
 
@@ -132,9 +132,8 @@ label: Items to show icons for (if not showing for all items)
 #define VAR_GLOBAL_SHOW_ICONS_ITEMLIST []
 
 apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
-    icon = CurrentItem();
+    
 }
-
 
 
 
@@ -175,7 +174,6 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
-
 
 
 
@@ -3955,7 +3953,6 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
-
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5831,7 +5828,6 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
-
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5949,7 +5945,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 1;showLootbeam = true;sound = 6765;
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";showLootbeam = true;sound = 6765;
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -6004,7 +6000,6 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
-
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6019,7 +6014,7 @@ label: Uniques custom style
 exampleItem: Tanzanite fang
 exampleItemId: 12922
 */
-#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";backgroundColor = "#33ededed";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";fontType = 1;showLootbeam = true;sound = 6765;
+#define VAR_UNIQUES_CUSTOMSTYLE hidden = false;textColor = "#ff00d09e";backgroundColor = "#33ededed";lootbeamColor = "#ff00d09e";menuTextColor = "#ff00d09e";showLootbeam = true;sound = 6765;
 
 
 
@@ -6056,7 +6051,6 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
-
 
 
 
@@ -7065,7 +7059,6 @@ apply (name:CONST_YAMA_CONTRACTS_LIST) {
 
 
 
-
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7083,33 +7076,13 @@ group: Misc Styles
 exampleItem: Ancient blood ornament kit
 exampleItemId: 28336
 */
-#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";fontType = 1;showLootbeam = true;sound = 6765;
+#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";showLootbeam = true;sound = 6765;
 
 apply (name:"Ancient blood ornament kit") {
     VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE 
 }
 
-/*@ define:input:individual_item_styles
-type: style
-label: Purifying sigil custom style
-group: Misc Styles
-exampleItem: Purifying sigil
-exampleItemId: 30793
-*/
-#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";fontType = 1;showLootbeam = true;sound = 6765;
 
-apply (name:"Purifying sigil*") {
-    VAR_PURIFYING_SIGIL_CUSTOMSTYLE 
-}
-
-
-/*@ define:input:individual_item_styles
-type: style
-label: Beginner clue scroll custom style
-group: Clue Scrolls Styles
-exampleItem: Clue scroll (beginner)
-exampleItemId: 23182
-*/
 #define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";
 
 apply (name:"Clue scroll (beginner)") {
@@ -7224,7 +7197,7 @@ label: Eternal gem
 group: Slayer Styles
 exampleItem: Eternal gem
 */
-#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";showLootbeam = true;sound = 6765;
 
 apply (name:"Eternal gem") {
     VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE 
@@ -7236,7 +7209,7 @@ label: Imbued heart
 group: Slayer Styles
 exampleItem: Imbued heart
 */
-#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";showLootbeam = true;sound = 6765;
 
 apply (name:"Imbued heart") {
     VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE 
@@ -7721,7 +7694,7 @@ label: Big banana
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_BIG_BANANA_CUSTOMSTYLE textColor = "#ffffed00";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
+#define VAR_BIG_BANANA_CUSTOMSTYLE textColor = "#ffffed00";backgroundColor = "#33ededed";sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Big banana") {
     VAR_BIG_BANANA_CUSTOMSTYLE
@@ -7733,7 +7706,7 @@ label: Eldritch ashes
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE textColor = "#ff8adefd";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
+#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE textColor = "#ff8adefd";backgroundColor = "#33ededed";sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Eldritch ashes") {
     VAR_ELDRITCH_ASHES_CUSTOMSTYLE
@@ -7745,7 +7718,7 @@ label: Fang
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_FANG_CUSTOMSTYLE textColor = "#ffebe9ba";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
+#define VAR_FANG_CUSTOMSTYLE textColor = "#ffebe9ba";backgroundColor = "#33ededed";sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Fang") {
     VAR_FANG_CUSTOMSTYLE
@@ -7757,7 +7730,7 @@ label: Scarab dung
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SCARAB_DUNG_CUSTOMSTYLE textColor = "#ffc55f00";backgroundColor = "#33ededed";fontType = 3;showLootbeam = false;sound = 4218;
+#define VAR_SCARAB_DUNG_CUSTOMSTYLE textColor = "#ffc55f00";backgroundColor = "#33ededed";showLootbeam = false;sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Scarab dung") {
     VAR_SCARAB_DUNG_CUSTOMSTYLE
@@ -11612,7 +11585,6 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
-
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11668,7 +11640,6 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
-
 
 
 
@@ -12467,7 +12438,6 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
-
 
 
 

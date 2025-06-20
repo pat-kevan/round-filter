@@ -1,20 +1,19 @@
-def process_file():
+def blobularise():
     try:
-        # Open the input file for reading
         with open('round_filter.rs2f', 'r') as input_file:
-            # Read all lines into a list
             lines = input_file.readlines()
 
-        # Filter out the unwanted lines
-        filtered_lines = [line for line in lines 
-                         if "icon = CurrentItem();" not in line 
-                         and "fontType = 3;" not in line]
+        processed_lines = []
+        for line in lines:
+            line = line.replace("icon = CurrentItem();", "")
+            line = line.replace("fontType = 3;", "")
+            line = line.replace("Round filter", "Round filter - Wub version")
+            processed_lines.append(line)
 
-        # Write the filtered content to the output file
-        with open('round_filter_wubmodetest.rs2f', 'w') as output_file:
-            output_file.writelines(filtered_lines)
+        with open('round_filter_wubmode.rs2f', 'w') as output_file:
+            output_file.writelines(processed_lines)
             
-        print("File processed successfully!")
+        print("blobularise success")
         
     except FileNotFoundError:
         print("Error: Input file 'round_filter.rs2f' not found.")
@@ -22,4 +21,4 @@ def process_file():
         print(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
-    process_file()
+    blobularise()
