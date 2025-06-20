@@ -8067,7 +8067,7 @@ label: Goading potion
 group: Potions Styles
 exampleItem: Goading potion(4)
 */
-#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFAA2315"textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
+#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFAA2315";textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
 
 apply (name:"Goading potion(*") {
     VAR_GOADING_POTION_CUSTOMSTYLE 
