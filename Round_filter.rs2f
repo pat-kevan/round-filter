@@ -3123,13 +3123,13 @@ label: Tree seeds to force hidden
 group: Farming seeds
 enum: [
   "Acorn",
-  "Willow tree seed",
-  "Maple tree seed",
-  "Yew tree seed",
-  "Magic tree seed"
+  "Willow seed",
+  "Maple seed",
+  "Yew seed",
+  "Magic seed"
 ]
 */
-#define VAR_FARMING_SEEDS_TREE_HIDE ["Acorn","Willow tree seed"]
+#define VAR_FARMING_SEEDS_TREE_HIDE ["Acorn","Willow seed"]
 
 apply (name:VAR_FARMING_SEEDS_TREE_HIDE) {
     hidden = true;
