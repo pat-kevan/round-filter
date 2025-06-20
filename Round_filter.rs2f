@@ -7263,7 +7263,7 @@ exampleItem: Overload
 exampleItemId: 20996
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_COX_OVERLOAD_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ]) {
     VAR_COX_OVERLOAD_CUSTOMSTYLE 
@@ -7277,7 +7277,7 @@ exampleItem: Xeric's aid
 exampleItemId: 20984
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_XERICS_AID_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";backgroundColor = "#00b0ad74";borderColor = "#00e8d5d5";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
+#define VAR_COX_XERICS_AID_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";menuTextColor = "#FFf7f84d";
 
 apply (area:CONST_COX_AREA && name:["xeric's aid (-)*",   "xeric's aid (4)",   "xeric's aid (3)",   "xeric's aid (2)",   "xeric's aid (1)",   "xeric's aid (+)*", ]) {
     VAR_COX_XERICS_AID_CUSTOMSTYLE 
@@ -7291,7 +7291,7 @@ exampleItem: Revitalisation potion
 exampleItemId: 20960
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_REVITALISATION_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#00a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
+#define VAR_COX_REVITALISATION_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";menuTextColor = "#FFed89b5";
 
 apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ]) {
     VAR_COX_REVITALISATION_CUSTOMSTYLE 
@@ -7305,7 +7305,7 @@ exampleItem: Prayer enhance
 exampleItemId: 20972
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE textColor = "#ffbc6bf3";backgroundColor = "#009357ba";borderColor = "#009357ba";textAccentColor = "#FF000000";menuTextColor = "#ffbc6bf3";
+#define VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE textColor = "#ffbc6bf3";textAccentColor = "#FF000000";menuTextColor = "#ffbc6bf3";
 
 apply (area:CONST_COX_AREA && name:["prayer enhance (-)*",   "prayer enhance (4)",   "prayer enhance (3)",   "prayer enhance (2)",   "prayer enhance (1)",   "prayer enhance (+)*", ]) {
     VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE 
@@ -7333,7 +7333,7 @@ exampleItem: Twisted potion
 exampleItemId: 20936
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_TWISTED_CUSTOMSTYLE hidden = true;
+#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#ff7cdb50";menuTextColor = "#ff7cdb50";
 
 apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ]) {
     VAR_COX_TWISTED_CUSTOMSTYLE 
@@ -7361,7 +7361,7 @@ exampleItem: Antipoison
 exampleItemId: 25765
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_COX_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";menuTextColor = "#E09C18";
 
 apply (area:CONST_COX_AREA && name:["antipoison (-)*",   "antipoison (4)",   "antipoison (3)",   "antipoison (2)",   "antipoison (1)",   "antipoison (+)*", ]) {
     VAR_COX_ANTIPOISON_CUSTOMSTYLE 
@@ -7389,7 +7389,7 @@ exampleItem: Buchu seed
 exampleItemId: 20909
 backgroundImage: Chambers of Xeric
 */
-#define VAR_BUCHU_SEED_CUSTOMSTYLE textColor = "#ff6adb34";backgroundColor = "#00a6413c";borderColor = "#00a6413c";textAccentColor = "#FF000000";menuTextColor = "#ff6adb34";
+#define VAR_BUCHU_SEED_CUSTOMSTYLE textColor = "#ff6adb34";menuTextColor = "#ff6adb34";
 
 apply (area:CONST_COX_AREA && name:"Buchu seed") {
     VAR_BUCHU_SEED_CUSTOMSTYLE 
@@ -7417,7 +7417,7 @@ exampleItem: Grimy golpar
 exampleItemId: 20904
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff7493a2";
+#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";menuTextColor = "#ff7493a2";
 
 apply (area:CONST_COX_AREA && name:"Grimy golpar") {
     VAR_GRIMY_GOLPAR_CUSTOMSTYLE 
@@ -7431,7 +7431,7 @@ exampleItem: Grimy buchu leaf
 exampleItemId: 20907
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff19be00";
+#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
 
 apply (area:CONST_COX_AREA && name:"Grimy buchu leaf") {
     VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE 
@@ -7445,7 +7445,7 @@ exampleItem: Grimy noxifer
 exampleItemId: 20901
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff9100df";
+#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";menuTextColor = "#ff9100df";
 
 apply (area:CONST_COX_AREA && name:"Grimy noxifer") {
     VAR_GRIMY_NOXIFER_CUSTOMSTYLE 
@@ -7459,7 +7459,7 @@ exampleItem: Golpar
 exampleItemId: 20905
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff7493a2";
+#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#ff7493a2";menuTextColor = "#ff7493a2";
 
 apply (area:CONST_COX_AREA && name:"golpar") {
     VAR_GOLPAR_CUSTOMSTYLE 
@@ -7473,7 +7473,7 @@ exampleItem: Buchu leaf
 exampleItemId: 20908
 backgroundImage: Chambers of Xeric
 */
-#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff19be00";
+#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#ff19be00";menuTextColor = "#ff19be00";
 
 apply (area:CONST_COX_AREA && name:"buchu leaf") {
     VAR_BUCHU_LEAF_CUSTOMSTYLE 
@@ -7487,7 +7487,7 @@ exampleItem: Noxifer
 exampleItemId: 20902
 backgroundImage: Chambers of Xeric
 */
-#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";backgroundColor = "#00a3d17d";borderColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff9100df";
+#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#ff9100df";menuTextColor = "#ff9100df";
 
 apply (area:CONST_COX_AREA && name:"noxifer") {
     VAR_NOXIFER_CUSTOMSTYLE 
@@ -7501,7 +7501,7 @@ exampleItem: Endarkened juice
 exampleItemId: 20911
 backgroundImage: Chambers of Xeric
 */
-#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE hidden = false;textColor = "#ffcf85f6";backgroundColor = "#007638e0";borderColor = "#007638e0";textAccentColor = "#FF000000";menuTextColor = "#ffcf85f6";
+#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE hidden = false;textColor = "#ffcf85f6";menuTextColor = "#ffcf85f6";
 
 apply (area:CONST_COX_AREA && name:"Endarkened juice") {
     VAR_ENDARKENED_JUICE_CUSTOMSTYLE 
@@ -7515,7 +7515,7 @@ exampleItem: Stinkhorn mushroom
 exampleItemId: 20910
 backgroundImage: Chambers of Xeric
 */
-#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#ffd95b55";backgroundColor = "#006e3431";borderColor = "#006e3431";textAccentColor = "#FF000000";menuTextColor = "#ffd95b55";
+#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#ffd95b55";menuTextColor = "#ffd95b55";
 
 apply (area:CONST_COX_AREA && name:"Stinkhorn mushroom") {
     VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE 
@@ -7529,7 +7529,7 @@ exampleItem: Cicely
 exampleItemId: 20912
 backgroundImage: Chambers of Xeric
 */
-#define VAR_CICELY_CUSTOMSTYLE hidden = false;textColor = "#ff81a86e";backgroundColor = "#00a3d17d";textAccentColor = "#FF000000";menuTextColor = "#ff81a86e";
+#define VAR_CICELY_CUSTOMSTYLE hidden = false;textColor = "#ff81a86e";menuTextColor = "#ff81a86e";
 
 apply (area:CONST_COX_AREA && name:"Cicely") {
     VAR_CICELY_CUSTOMSTYLE 
@@ -7543,7 +7543,7 @@ exampleItem: Mallignum root plank
 exampleItemId: 21036
 backgroundImage: Chambers of Xeric
 */
-#define VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE hidden = false;textColor = "#fffac180";backgroundColor = "#0047431f";borderColor = "#00f2c05c";textAccentColor = "#FF000000";menuTextColor = "#E09C18";
+#define VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE hidden = false;textColor = "#fffac180";menuTextColor = "#E09C18";
 
 apply (area:CONST_COX_AREA && name:"Mallignum root plank") {
     VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE 
@@ -7571,7 +7571,7 @@ exampleItem: Empty gourd vial
 exampleItemId: 20800
 backgroundImage: Chambers of Xeric
 */
-#define VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00646266";borderColor = "#00beb8c2";textAccentColor = "#FF000000";menuTextColor = "#FFbeb8c2";
+#define VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";menuTextColor = "#FFbeb8c2";
 
 apply (area:CONST_COX_AREA && name:"Empty gourd vial") {
     VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE 
@@ -7585,7 +7585,7 @@ exampleItem: Water-filled gourd vial
 exampleItemId: 20801
 backgroundImage: Chambers of Xeric
 */
-#define VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#009e7655";borderColor = "#009e7655";textAccentColor = "#FF000000";menuTextColor = "#FFcfbbaa";
+#define VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";menuTextColor = "#FFcfbbaa";
 
 apply (area:CONST_COX_AREA && name:"Water-filled gourd vial") {
     VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE 
@@ -7599,7 +7599,7 @@ group: Theatre of Blood Styles
 exampleItem: Dawnbringer
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ffadf3ff";backgroundColor = "#33ededed";borderColor = "#00b8a12e";textAccentColor = "#FF000000";menuTextColor = "#ffadf3ff";fontType = 2;
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ffadf3ff";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#ffadf3ff";fontType = 2;
 
 /*@ define:input:individual_item_styles
 type: style
@@ -7608,7 +7608,7 @@ group: Theatre of Blood Styles
 exampleItem: Salve amulet (e)
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";borderColor = "#00f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FFf5f3f3";
 
 apply (name:"Dawnbringer") {
     VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
@@ -7625,7 +7625,7 @@ label: Smelling salts
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
     VAR_SMELLING_SALTS_CUSTOMSTYLE
@@ -7637,7 +7637,7 @@ label: Ambrosia
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#33ededed";borderColor = "#00fcfcfc";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
+#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
 
 apply (area:CONST_TOA_AREA && name:"Ambrosia (*") {
     VAR_AMBROSIA_CUSTOMSTYLE
@@ -7649,7 +7649,7 @@ label: Tears of Elidinis
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#12a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
+#define VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";menuTextColor = "#FFed89b5";
 
 apply (area:CONST_TOA_AREA && name:"Tears of Elidinis (*") {
     VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE
@@ -7661,7 +7661,7 @@ label: Nectar
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_NECTAR_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";backgroundColor = "#00b0ad74";borderColor = "#00e8d5d5";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
+#define VAR_NECTAR_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";menuTextColor = "#FFf7f84d";
 
 apply (area:CONST_TOA_AREA && name:"Nectar (*") {
     VAR_NECTAR_CUSTOMSTYLE
@@ -7673,7 +7673,7 @@ label: Liquid adrenaline
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_LIQUID_ADRENALINE_CUSTOMSTYLE textColor = "#FF35c6d7";backgroundColor = "#0036c6d6";borderColor = "#0036c6d6";textAccentColor = "#FF000000";menuTextColor = "#FF35c6d7";
+#define VAR_LIQUID_ADRENALINE_CUSTOMSTYLE textColor = "#FF35c6d7";backgroundColor = "#33ededed";menuTextColor = "#FF35c6d7";
 
 apply (area:CONST_TOA_AREA && name:"Liquid adrenaline (*") {
     VAR_LIQUID_ADRENALINE_CUSTOMSTYLE
@@ -7685,7 +7685,7 @@ label: Blessed crystal scarab
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_BLESSED_CRYSTAL_SCARAB_CUSTOMSTYLE textColor = "#ffbc6bf3";backgroundColor = "#009357ba";borderColor = "#009357ba";textAccentColor = "#FF000000";menuTextColor = "#ffbc6bf3";
+#define VAR_BLESSED_CRYSTAL_SCARAB_CUSTOMSTYLE textColor = "#ffbc6bf3";menuTextColor = "#ffbc6bf3";
 
 apply (area:CONST_TOA_AREA && name:"Blessed crystal scarab (*") {
     VAR_BLESSED_CRYSTAL_SCARAB_CUSTOMSTYLE
@@ -7721,7 +7721,7 @@ label: Neutralising potion
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_NEUTRALISING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500d8011";borderColor = "#FF0d8011";textAccentColor = "#FF000000";menuTextColor = "#FF0d8011";
+#define VAR_NEUTRALISING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";menuTextColor = "#FF0d8011";
 
 apply (area:CONST_TOA_AREA && name:"Neutralising potion") {
     VAR_NEUTRALISING_POTION_CUSTOMSTYLE
