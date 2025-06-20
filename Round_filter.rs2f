@@ -10,6 +10,7 @@ meta { name = "Round filter"; description = "Modified version of Joe's filter wi
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -135,6 +136,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -168,6 +170,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3436,7 +3439,7 @@ enum: [
   "Araxyte venom sack"
 ]
 */
-#define VAR_SECONDARIES_HIDE ["Eye of newt","Volcanic ash","Chocolate dust"]
+#define VAR_SECONDARIES_HIDE []
 
 /*@ define:input:herblore_secondaries
 type: enumlist
@@ -3596,7 +3599,7 @@ type: number
 label: Coins minimum quantity
 group: Currency
 */
-#define VAR_COINS_MIN_QUANTITY 0
+#define VAR_COINS_MIN_QUANTITY 1000
 
 apply (name:"Ship ticket" && quantity:<VAR_SHIP_TICKET_MIN_QUANTITY) {
     hidden = true;
@@ -3941,6 +3944,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -3989,7 +3993,7 @@ enum: [
   }
 ]
 */
-#define VAR_COX_POTIONS_HIDE ["Twisted*","Kodai*","Elder*"]
+#define VAR_COX_POTIONS_HIDE ["Kodai*","Elder*"]
 
 /*@ define:input:chambers_of_xeric
 type: enumlist
@@ -5813,6 +5817,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5982,6 +5987,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6033,6 +6039,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -7035,6 +7042,7 @@ apply (name:CONST_YAMA_CONTRACTS_LIST) {
 
 
 
+
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7609,7 +7617,7 @@ label: Smelling salts
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#a8ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";borderColor = "#00120e0e";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
     VAR_SMELLING_SALTS_CUSTOMSTYLE
@@ -7621,7 +7629,7 @@ label: Ambrosia
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#00fcfcfc";borderColor = "#FFfcfdfc";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
+#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#33ededed";borderColor = "#00fcfcfc";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
 
 apply (area:CONST_TOA_AREA && name:"Ambrosia (*") {
     VAR_AMBROSIA_CUSTOMSTYLE
@@ -8283,7 +8291,7 @@ label: Bastion potion
 group: Potions Styles
 exampleItem: Bastion potion(4)
 */
-#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#ffff7700";textAccentColor = "#FF000000";menuTextColor = "#ffff7700";
 
 apply (name:"Bastion potion(*") {
     VAR_BASTION_POTION_CUSTOMSTYLE 
@@ -8343,7 +8351,7 @@ label: Divine bastion potion
 group: Potions Styles
 exampleItem: Divine bastion potion(4)
 */
-#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#ffff7700";textAccentColor = "#FF000000";menuTextColor = "#ffff7700";
 
 apply (name:"Divine bastion potion(*") {
     VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE 
@@ -8439,7 +8447,7 @@ label: Extended anti-venom+
 group: Potions Styles
 exampleItem: Extended anti-venom+(4)
 */
-#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FF66967B";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
+#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#ff76c799";textAccentColor = "#FF000000";menuTextColor = "#ff76c799";
 
 apply (name:"Extended anti-venom+(*") {
     VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE 
@@ -8451,7 +8459,7 @@ label: Divine super combat potion
 group: Potions Styles
 exampleItem: Divine super combat potion(4)
 */
-#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff37bf1f";textAccentColor = "#FF000000";menuTextColor = "#ff37bf1f";
+#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff1bb100";textAccentColor = "#FF000000";menuTextColor = "#ff1bb100";
 
 apply (name:"Divine super combat potion(*") {
     VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE 
@@ -8475,7 +8483,7 @@ label: Surge potion
 group: Potions Styles
 exampleItem: Surge potion(4)
 */
-#define VAR_SURGE_POTION_CUSTOMSTYLE textColor = "#FF70939c";textAccentColor = "#FF000000";menuTextColor = "#FF70939c";
+#define VAR_SURGE_POTION_CUSTOMSTYLE textColor = "#ff7bb7c7";textAccentColor = "#FF000000";menuTextColor = "#ff7bb7c7";
 
 apply (name:"Surge potion(*") {
     VAR_SURGE_POTION_CUSTOMSTYLE 
@@ -8485,9 +8493,9 @@ apply (name:"Surge potion(*") {
 type: style
 label: Guthix rest
 group: Potions Styles
-exampleItem: Surge potion(4)
+exampleItem: Guthix rest(4)
 */
-#define VAR_GUTHIX_REST_CUSTOMSTYLE textColor = "#FF70939c";textAccentColor = "#FF000000";menuTextColor = "#FF70939c";
+#define VAR_GUTHIX_REST_CUSTOMSTYLE textColor = "#ff6bbd3f";textAccentColor = "#FF000000";menuTextColor = "#ff6bbd3f";
 
 apply (name:"Guthix rest(*") {
     VAR_GUTHIX_REST_CUSTOMSTYLE 
@@ -11605,6 +11613,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11660,6 +11669,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12455,6 +12465,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
