@@ -7082,66 +7082,7 @@ apply (name:"Ancient blood ornament kit") {
     VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE 
 }
 
-/*@ define:input:individual_item_styles
-type: style
-label: Purifying sigil custom style
-group: Misc Styles
-exampleItem: Purifying sigil
-exampleItemId: 30793
-*/
-#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#ffff1f00";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#ffff1f00";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
-apply (name:"Purifying sigil*") {
-    VAR_PURIFYING_SIGIL_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_item_styles
-type: style
-label: "Avernic defender custom style"
-group: Misc Styles
-exampleItem: "Avernic defender"
-exampleItemId: 24186
-*/
-#define VAR_AVERNIC_DEFENDER_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
-
-apply (name:"Avernic defender*") {
-  VAR_AVERNIC_DEFENDER_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_item_styles
-type: style
-label: "Ghommal's avernic defender 5 custom style"
-group: Misc Styles
-exampleItem: "Ghommal's avernic defender 5"
-exampleItemId: 27550
-*/
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
-
-apply (name:"Ghommal's avernic defender 5*") {
-  VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_item_styles
-type: style
-label: "Ghommal's avernic defender 6 custom style"
-group: Misc Styles
-exampleItem: "Ghommal's avernic defender 6"
-exampleItemId: 27552
-*/
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE textColor = "#ffff4ea6";backgroundColor = "#33ededed";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";fontType = 3;showLootbeam = true;sound = 6765;icon = CurrentItem();
-
-apply (name:"Ghommal's avernic defender 6*") {
-  VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE 
-}
-
-
-/*@ define:input:individual_item_styles
-type: style
-label: Beginner clue scroll custom style
-group: Clue Scrolls Styles
-exampleItem: Clue scroll (beginner)
-exampleItemId: 23182
-*/
 #define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#33ededed";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";icon = CurrentItem();
 
 apply (name:"Clue scroll (beginner)") {
