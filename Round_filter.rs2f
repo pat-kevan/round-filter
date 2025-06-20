@@ -7240,6 +7240,18 @@ apply (name:"Brimstone key") {
 
 /*@ define:input:individual_item_styles
 type: style
+label: Ecumenical key
+group: Slayer Styles
+exampleItem: Ecumenical key
+*/
+#define VAR_SLAYER_ECCY_KEY_CUSTOMSTYLE textColor = "#ffe3ff00";backgroundColor = "#33ededed";borderColor = "#00edd11c";textAccentColor = "#FF000000";menuTextColor = "#ffe3ff00";showLootbeam = true;sound = 932;
+
+apply (name:"Ecumenical key") {
+    VAR_SLAYER_ECCY_KEY_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_item_styles
+type: style
 label: Eternal gem
 group: Slayer Styles
 exampleItem: Eternal gem
