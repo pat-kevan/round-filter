@@ -12,6 +12,7 @@ meta { name = "Round filter"; description = "Modified version of Joe's filter wi
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -139,6 +140,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -172,6 +174,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3949,6 +3952,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5823,6 +5827,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5994,6 +5999,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6017,7 +6023,7 @@ type: stringlist
 label: Uniques
 group: Uniques List
 */
-#define VAR_UNIQUES_LIST ["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Abyssal head","Bludgeon spine","Bludgeon claw","Bludgeon axon","Abyssal dagger","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte fang","Noxious point","Noxious blade","Noxious pommel","Smoke battlestaff","Dragon chainbody","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Ahrim's hood","Ahrim's robetop","Ahrim's robeskirt","Ahrim's staff","Karil's coif","Karil's leathertop","Karil's leatherskirt","Karil's crossbow","Dharok's helm","Dharok's platebody","Dharok's platelegs","Dharok's greataxe","Guthan's helm","Guthan's platebody","Guthan's chainskirt","Guthan's warspear","Torag's helm","Torag's platebody","Torag's platelegs","Torag's hammers","Verac's helm","Verac's brassard","Verac's plateskirt","Verac's flail","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Blood moon helm","Blood moon chestplate","Blood moon tassets","Dual macuahuitl","Blue moon helm","Blue moon chestplate","Blue moon tassets","Blue moon spear","Eclipse moon helm","Eclipse moon chestplate","Eclipse moon tassets","Eclipse atlatl","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Draconic visage","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Hill giant club","Bryophyta's essence","Ring of 3rd age","Bottomless compost bucket","Dark claw","Dark totem","Crystal armour seed","Crystal weapon seed","Enhanced crystal weapon seed","Sunfire fanatic cuirass","Sunfire fanatic chausses","Sunfire fanatic helm","Echo crystal","Tonalztics of ralos (uncharged)","Big harpoonfish","Tome of water (empty)","Tackle box","Fish barrel","Dragon harpoon","Tome of fire (empty)","Crystal tool seed","Zalcano shard","Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow","Dinh's bulwark","Ancestral hat","Ancestral robe top","Ancestral robe bottom","Dragon claws","Elder maul","Kodai insignia","Twisted bow","Twisted ancestral colour kit","Metamorphic dust","Avernic defender hilt","Ghrazi rapier","Sanguinesti staff (uncharged)","Justiciar faceguard","Justiciar chestguard","Justiciar legguards","Scythe of vitur (uncharged)","Holy ornament kit","Sanguine ornament kit","Sanguine dust","Masori mask","Masori body","Masori chaps","Lightbearer","Osmumten's fang","Elidinis' ward","Tumeken's shadow","Breach of the scarab","Eye of the corruptor","Jewel of the sun","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Big swordfish","Big shark","Big bass","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mask of ranul","Elven signet","Dragon metal slice","Dragon metal lump","Imbued heart","Eternal gem","Broken dragon hasta","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Pendant of ates","Scurrius' spine","Kq head (tattered)","Curved bone","Sulphur blades"]
+#define VAR_UNIQUES_LIST ["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Abyssal head","Bludgeon spine","Bludgeon claw","Bludgeon axon","Abyssal dagger","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte fang","Noxious point","Noxious blade","Noxious pommel","Smoke battlestaff","Dragon chainbody","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Ahrim's hood","Ahrim's robetop","Ahrim's robeskirt","Ahrim's staff","Karil's coif","Karil's leathertop","Karil's leatherskirt","Karil's crossbow","Dharok's helm","Dharok's platebody","Dharok's platelegs","Dharok's greataxe","Guthan's helm","Guthan's platebody","Guthan's chainskirt","Guthan's warspear","Torag's helm","Torag's platebody","Torag's platelegs","Torag's hammers","Verac's helm","Verac's brassard","Verac's plateskirt","Verac's flail","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Blood moon helm","Blood moon chestplate","Blood moon tassets","Dual macuahuitl","Blue moon helm","Blue moon chestplate","Blue moon tassets","Blue moon spear","Eclipse moon helm","Eclipse moon chestplate","Eclipse moon tassets","Eclipse atlatl","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Draconic visage","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Hill giant club","Bryophyta's essence","Ring of 3rd age","Bottomless compost bucket","Dark claw","Dark totem","Crystal armour seed","Crystal weapon seed","Enhanced crystal weapon seed","Sunfire fanatic cuirass","Sunfire fanatic chausses","Sunfire fanatic helm","Echo crystal","Tonalztics of ralos (uncharged)","Big harpoonfish","Tome of water (empty)","Tackle box","Fish barrel","Dragon harpoon","Tome of fire (empty)","Crystal tool seed","Zalcano shard","Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow","Dinh's bulwark","Ancestral hat","Ancestral robe top","Ancestral robe bottom","Dragon claws","Elder maul","Kodai insignia","Twisted bow","Twisted ancestral colour kit","Metamorphic dust","Avernic defender hilt","Ghrazi rapier","Sanguinesti staff (uncharged)","Justiciar faceguard","Justiciar chestguard","Justiciar legguards","Scythe of vitur (uncharged)","Holy ornament kit","Sanguine ornament kit","Sanguine dust","Masori mask","Masori body","Masori chaps","Lightbearer","Osmumten's fang","Elidinis' ward","Tumeken's shadow","Breach of the scarab","Eye of the corruptor","Jewel of the sun","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Big swordfish","Big shark","Big bass","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mask of ranul","Elven signet","Dragon metal slice","Dragon metal lump","Imbued heart","Eternal gem","Broken dragon hasta","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Pendant of ates","Scurrius' spine","Kq head (tattered)","Curved bone","Sulphur blades","Sulphur blades"]
 
 apply (name:VAR_UNIQUES_LIST) {
     VAR_UNIQUES_CUSTOMSTYLE 
@@ -6045,6 +6051,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -7051,6 +7058,7 @@ apply (name:CONST_YAMA_CONTRACTS_LIST) {
 
 
 
+
 /*@ define:module:individual_item_styles
 ---
 name: Individual Item Styles
@@ -7333,7 +7341,7 @@ exampleItem: Twisted potion
 exampleItemId: 20936
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#ff7cdb50";menuTextColor = "#ff7cdb50";
+#define VAR_COX_TWISTED_CUSTOMSTYLE hidden = false;textColor = "#ff7cdb50";menuTextColor = "#ff7cdb50";
 
 apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ]) {
     VAR_COX_TWISTED_CUSTOMSTYLE 
@@ -7625,7 +7633,7 @@ label: Smelling salts
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";menuTextColor = "#FF130F0F";
+#define VAR_SMELLING_SALTS_CUSTOMSTYLE hidden = false;textColor = "#ff000000";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
     VAR_SMELLING_SALTS_CUSTOMSTYLE
@@ -7637,7 +7645,7 @@ label: Ambrosia
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#33ededed";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
+#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#33ededed";borderColor = "#00fcfcfc";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
 
 apply (area:CONST_TOA_AREA && name:"Ambrosia (*") {
     VAR_AMBROSIA_CUSTOMSTYLE
@@ -7733,7 +7741,7 @@ label: Big banana
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_BIG_BANANA_CUSTOMSTYLE
+#define VAR_BIG_BANANA_CUSTOMSTYLE textColor = "#ffffed00";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Big banana") {
     VAR_BIG_BANANA_CUSTOMSTYLE
@@ -7745,7 +7753,7 @@ label: Eldritch ashes
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE
+#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE textColor = "#ff8adefd";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Eldritch ashes") {
     VAR_ELDRITCH_ASHES_CUSTOMSTYLE
@@ -7757,7 +7765,7 @@ label: Fang
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_FANG_CUSTOMSTYLE
+#define VAR_FANG_CUSTOMSTYLE textColor = "#ffebe9ba";backgroundColor = "#33ededed";fontType = 3;sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Fang") {
     VAR_FANG_CUSTOMSTYLE
@@ -7769,7 +7777,7 @@ label: Scarab dung
 group: Tombs of Amascut Styles
 backgroundImage: Wardens
 */
-#define VAR_SCARAB_DUNG_CUSTOMSTYLE
+#define VAR_SCARAB_DUNG_CUSTOMSTYLE textColor = "#ffc55f00";backgroundColor = "#33ededed";fontType = 3;showLootbeam = false;sound = 4218;
 
 apply (area:CONST_TOA_AREA && name:"Scarab dung") {
     VAR_SCARAB_DUNG_CUSTOMSTYLE
@@ -11623,6 +11631,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11678,6 +11687,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12475,6 +12485,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
