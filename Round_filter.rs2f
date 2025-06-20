@@ -554,6 +554,10 @@ enum: [
     "label": "Super restore"
   },
   {
+    "value": "Blighted super restore(*",
+    "label": "Blighted super restore"
+  },
+  {
     "value": "Sanfew serum(*",
     "label": "Sanfew serum"
   },
@@ -771,6 +775,10 @@ enum: [
     "label": "Super restore"
   },
   {
+    "value": "Blighted super restore(*",
+    "label": "Blighted super restore"
+  },
+  {
     "value": "Sanfew serum(*",
     "label": "Sanfew serum"
   },
@@ -896,7 +904,7 @@ enum: [
   }
 ]
 */
-#define VAR_POTIONS_SHOW ["Anti-venom(*","Anti-venom+(*","Antidote++(*","Antifire potion(*","Bastion potion(*","Battlemage potion(*","Divine bastion potion(*","Divine battlemage potion(*","Divine magic potion(*","Divine ranging potion(*","Divine super attack potion(*","Divine super combat potion(*","Divine super defence potion(*","Divine super strength potion(*","Extended anti-venom+(*","Extended antifire(*","Extended super antifire(*","Forgotten brew(*","Goading potion(*","Menaphite remedy(*","Prayer regeneration potion(*","Ranging potion(*","Sanfew serum(*","Saradomin brew(*","Stamina potion(*","Super antifire potion(*","Super combat potion(*","Super restore(*","Surge potion(*"]
+#define VAR_POTIONS_SHOW ["Anti-venom(*","Anti-venom+(*","Antidote++(*","Antifire potion(*","Bastion potion(*","Battlemage potion(*","Divine bastion potion(*","Divine battlemage potion(*","Divine magic potion(*","Divine ranging potion(*","Divine super attack potion(*","Divine super combat potion(*","Divine super defence potion(*","Divine super strength potion(*","Extended anti-venom+(*","Extended antifire(*","Extended super antifire(*","Forgotten brew(*","Goading potion(*","Menaphite remedy(*","Prayer regeneration potion(*","Ranging potion(*","Sanfew serum(*","Saradomin brew(*","Stamina potion(*","Super antifire potion(*","Super combat potion(*","Super restore(*","Blighted super restore(*","Surge potion(*"]
 
 apply (name:VAR_POTIONS_SHOW) {
     hidden = false;
@@ -8097,7 +8105,7 @@ exampleItem: Super restore(4)
 */
 #define VAR_SUPER_RESTORE_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#12a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
 
-apply (name:"Super restore(*") {
+apply (name:"Super restore(*" || name:"Blighted super restore(*") {
     VAR_SUPER_RESTORE_CUSTOMSTYLE 
 }
 
