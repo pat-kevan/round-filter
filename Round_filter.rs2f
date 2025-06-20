@@ -8067,7 +8067,7 @@ label: Goading potion
 group: Potions Styles
 exampleItem: Goading potion(4)
 */
-#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFAA2315";backgroundColor = "#00ab2415";borderColor = "#00ab2415";textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
+#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFAA2315"textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
 
 apply (name:"Goading potion(*") {
     VAR_GOADING_POTION_CUSTOMSTYLE 
@@ -8079,7 +8079,7 @@ label: Super strength
 group: Potions Styles
 exampleItem: Super strength(4)
 */
-#define VAR_SUPER_STRENGTH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00d6d6d6";borderColor = "#00d6d6d6";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
+#define VAR_SUPER_STRENGTH_CUSTOMSTYLE textColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
 
 apply (name:"Super strength(*") {
     VAR_SUPER_STRENGTH_CUSTOMSTYLE 
@@ -8091,7 +8091,7 @@ label: Prayer regeneration potion
 group: Potions Styles
 exampleItem: Prayer regeneration potion(4)
 */
-#define VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00825349";borderColor = "#00825349";textAccentColor = "#FF000000";menuTextColor = "#FF815248";
+#define VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FF815248";
 
 apply (name:"Prayer regeneration potion(*") {
     VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE 
@@ -8103,7 +8103,7 @@ label: Super restore
 group: Potions Styles
 exampleItem: Super restore(4)
 */
-#define VAR_SUPER_RESTORE_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";backgroundColor = "#00a66785";borderColor = "#12a66785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
+#define VAR_SUPER_RESTORE_CUSTOMSTYLE hidden = false;textColor = "#FFed89b5";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
 
 apply (name:"Super restore(*" || name:"Blighted super restore(*") {
     VAR_SUPER_RESTORE_CUSTOMSTYLE 
@@ -8115,7 +8115,7 @@ label: Sanfew serum
 group: Potions Styles
 exampleItem: Sanfew serum(4)
 */
-#define VAR_SANFEW_SERUM_CUSTOMSTYLE textColor = "#FFB97673";backgroundColor = "#00ba7773";borderColor = "#00ba7773";textAccentColor = "#FF000000";menuTextColor = "#FFB97673";
+#define VAR_SANFEW_SERUM_CUSTOMSTYLE textColor = "#FFB97673";textAccentColor = "#FF000000";menuTextColor = "#FFB97673";
 
 apply (name:"Sanfew serum(*") {
     VAR_SANFEW_SERUM_CUSTOMSTYLE 
@@ -8127,7 +8127,7 @@ label: Super defence
 group: Potions Styles
 exampleItem: Super defence(4)
 */
-#define VAR_SUPER_DEFENCE_CUSTOMSTYLE textColor = "#FFD2B45C";backgroundColor = "#00d1b45c";borderColor = "#00d1b45c";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
+#define VAR_SUPER_DEFENCE_CUSTOMSTYLE textColor = "#FFD2B45C";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
 
 apply (name:"Super defence(*") {
     VAR_SUPER_DEFENCE_CUSTOMSTYLE 
@@ -8163,7 +8163,7 @@ label: Divine super attack potion
 group: Potions Styles
 exampleItem: Divine super attack potion(4)
 */
-#define VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE textColor = "#FF5457C9";backgroundColor = "#005559c9";borderColor = "#005559c9";textAccentColor = "#FF000000";menuTextColor = "#FF5457C9";
+#define VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE textColor = "#FF5457C9";textAccentColor = "#FF000000";menuTextColor = "#FF5457C9";
 
 apply (name:"Divine super attack potion(*") {
     VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE 
@@ -8175,7 +8175,7 @@ label: Divine super defence potion
 group: Potions Styles
 exampleItem: Divine super defence potion(4)
 */
-#define VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFD2B45C";backgroundColor = "#00d1b45c";borderColor = "#00d1b45c";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
+#define VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFD2B45C";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
 
 apply (name:"Divine super defence potion(*") {
     VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE 
@@ -8187,7 +8187,7 @@ label: Divine super strength potion
 group: Potions Styles
 exampleItem: Divine super strength potion(4)
 */
-#define VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00d6d6d6";borderColor = "#00d6d6d6";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
+#define VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
 
 apply (name:"Divine super strength potion(*") {
     VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE 
@@ -8199,7 +8199,7 @@ label: Ranging potion
 group: Potions Styles
 exampleItem: Ranging potion(4)
 */
-#define VAR_RANGING_POTION_CUSTOMSTYLE textColor = "#ff24b8f2";backgroundColor = "#0053a8c9";borderColor = "#0053a8c9";textAccentColor = "#FF000000";menuTextColor = "#ff24b8f2";
+#define VAR_RANGING_POTION_CUSTOMSTYLE textColor = "#ff24b8f2";textAccentColor = "#FF000000";menuTextColor = "#ff24b8f2";
 
 apply (name:"Ranging potion(*") {
     VAR_RANGING_POTION_CUSTOMSTYLE 
@@ -8211,7 +8211,7 @@ label: Divine ranging potion
 group: Potions Styles
 exampleItem: Divine ranging potion(4)
 */
-#define VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE textColor = "#ff24b8f2";backgroundColor = "#0068b5d4";borderColor = "#00abc7c1";textAccentColor = "#FF000000";menuTextColor = "#ff24b8f2";
+#define VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE textColor = "#ff24b8f2";textAccentColor = "#FF000000";menuTextColor = "#ff24b8f2";
 
 apply (name:"Divine ranging potion(*") {
     VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE 
@@ -8235,7 +8235,7 @@ label: Stamina potion
 group: Potions Styles
 exampleItem: Stamina potion(4)
 */
-#define VAR_STAMINA_POTION_CUSTOMSTYLE textColor = "#ff967645";backgroundColor = "#00967645";borderColor = "#00967645";textAccentColor = "#FF000000";menuTextColor = "#ff967645";
+#define VAR_STAMINA_POTION_CUSTOMSTYLE textColor = "#ff967645";textAccentColor = "#FF000000";menuTextColor = "#ff967645";
 
 apply (name:"Stamina potion(*") {
     VAR_STAMINA_POTION_CUSTOMSTYLE 
@@ -8271,7 +8271,7 @@ label: Antidote++
 group: Potions Styles
 exampleItem: Antidote++(4)
 */
-#define VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE textColor = "#FF7A7E3A";backgroundColor = "#00787d39";borderColor = "#00787d39";textAccentColor = "#FF000000";menuTextColor = "#FF7A7E3A";
+#define VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE textColor = "#FF7A7E3A";textAccentColor = "#FF000000";menuTextColor = "#FF7A7E3A";
 
 apply (name:"Antidote++(*") {
     VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE 
@@ -8283,7 +8283,7 @@ label: Bastion potion
 group: Potions Styles
 exampleItem: Bastion potion(4)
 */
-#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";backgroundColor = "#00ba6316";borderColor = "#00abc7c1";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
 
 apply (name:"Bastion potion(*") {
     VAR_BASTION_POTION_CUSTOMSTYLE 
@@ -8307,7 +8307,7 @@ label: Saradomin brew
 group: Potions Styles
 exampleItem: Saradomin brew(4)
 */
-#define VAR_SARADOMIN_BREW_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";backgroundColor = "#00b0ad74";borderColor = "#00e8d5d5";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
+#define VAR_SARADOMIN_BREW_CUSTOMSTYLE hidden = false;textColor = "#FFf7f84d";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
 
 apply (name:"Saradomin brew(*") {
     VAR_SARADOMIN_BREW_CUSTOMSTYLE 
@@ -8343,7 +8343,7 @@ label: Divine bastion potion
 group: Potions Styles
 exampleItem: Divine bastion potion(4)
 */
-#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";backgroundColor = "#00ba6316";borderColor = "#00abc7c1";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
 
 apply (name:"Divine bastion potion(*") {
     VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE 
@@ -8391,7 +8391,7 @@ label: Super combat potion
 group: Potions Styles
 exampleItem: Super combat potion(4)
 */
-#define VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff37bf1f";backgroundColor = "#0018630b";borderColor = "#0018630b";textAccentColor = "#FF000000";menuTextColor = "#ff37bf1f";
+#define VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff37bf1f";textAccentColor = "#FF000000";menuTextColor = "#ff37bf1f";
 
 apply (name:"Super combat potion(*") {
     VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE 
@@ -8439,7 +8439,7 @@ label: Extended anti-venom+
 group: Potions Styles
 exampleItem: Extended anti-venom+(4)
 */
-#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FF66967B";backgroundColor = "#0066967b";borderColor = "#0066967b";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
+#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FF66967B";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
 
 apply (name:"Extended anti-venom+(*") {
     VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE 
@@ -8451,7 +8451,7 @@ label: Divine super combat potion
 group: Potions Styles
 exampleItem: Divine super combat potion(4)
 */
-#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff37bf1f";backgroundColor = "#001c700b";borderColor = "#00abc7c1";textAccentColor = "#FF000000";menuTextColor = "#ff37bf1f";
+#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#ff37bf1f";textAccentColor = "#FF000000";menuTextColor = "#ff37bf1f";
 
 apply (name:"Divine super combat potion(*") {
     VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE 
@@ -8463,7 +8463,7 @@ label: Extended super antifire
 group: Potions Styles
 exampleItem: Extended super antifire(4)
 */
-#define VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE textColor = "#FFB393CB";backgroundColor = "#00b393cc";borderColor = "#00b393cc";textAccentColor = "#FF000000";menuTextColor = "#FFB393CB";
+#define VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE textColor = "#FFB393CB";textAccentColor = "#FF000000";menuTextColor = "#FFB393CB";
 
 apply (name:"Extended super antifire(*") {
     VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE 
@@ -8475,7 +8475,7 @@ label: Surge potion
 group: Potions Styles
 exampleItem: Surge potion(4)
 */
-#define VAR_SURGE_POTION_CUSTOMSTYLE textColor = "#FF70939c";backgroundColor = "#0070939c";borderColor = "#0070939c";textAccentColor = "#FF000000";menuTextColor = "#FF70939c";
+#define VAR_SURGE_POTION_CUSTOMSTYLE textColor = "#FF70939c";textAccentColor = "#FF000000";menuTextColor = "#FF70939c";
 
 apply (name:"Surge potion(*") {
     VAR_SURGE_POTION_CUSTOMSTYLE 
@@ -12593,7 +12593,7 @@ name: Constants
 
 #define CONST_HUNTER_FOODS_LIST [   "Cooked wild kebbit",   "Cooked larupia",   "Cooked barb-tailed kebbit",   "Cooked graahk",   "Cooked kyatt",   "Cooked pyre fox",   "Cooked sunlight antelope",   "Cooked dashing kebbit",   "Cooked moonlight antelope", ]
 
-#define CONST_FISH_FOODS_LIST [   "Shrimps",   "Sardine",   "Karambwanji",   "Herring",   "Anchovies",   "Mackerel",   "Trout",   "Cod",   "Pike",   "Cooked slimy eel",   "Salmon",   "Tuna",   "Rainbow fish",   "Cave eel",   "Lobster",   "Bass",   "Swordfish",   "Lava eel",   "Monkfish",   "Cooked karambwan",   "Shark",   "Sea turtle",   "Manta ray",   "Anglerfish",   "Dark crab", ]
+#define CONST_FISH_FOODS_LIST [   "Shrimps",   "Sardine",   "Karambwanji",   "Herring",   "Anchovies",   "Mackerel",   "Trout",   "Cod",   "Pike",   "Cooked slimy eel",   "Salmon",   "Tuna",   "Rainbow fish",   "Cave eel",   "Lobster",   "Bass",   "Swordfish",   "Lava eel",   "Monkfish",   "Cooked karambwan",   "Shark",   "Sea turtle",   "Manta ray",   "Anglerfish",   "Dark crab",   "Blighted anglerfish",   "Blighted karambwan",   "Blighted manta ray" ]
 
 #define CONST_POTATOES_FOODS_LIST [   "Baked potato",   "Potato with butter",   "Chilli potato",   "Potato with cheese",   "Egg potato",   "Mushroom potato",   "Tuna potato", ]
 
