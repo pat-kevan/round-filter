@@ -8481,6 +8481,18 @@ apply (name:"Surge potion(*") {
     VAR_SURGE_POTION_CUSTOMSTYLE 
 }
 
+/*@ define:input:individual_item_styles
+type: style
+label: Guthix rest
+group: Potions Styles
+exampleItem: Surge potion(4)
+*/
+#define VAR_GUTHIX_REST_CUSTOMSTYLE textColor = "#FF70939c";textAccentColor = "#FF000000";menuTextColor = "#FF70939c";
+
+apply (name:"Guthix rest(*") {
+    VAR_GUTHIX_REST_CUSTOMSTYLE 
+}
+
 
 /*@ define:input:individual_item_styles
 type: style
