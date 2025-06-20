@@ -13,7 +13,6 @@ meta { name = "Round filter (Wub's version)"; description = "Modified version of
 
 
 
-
 /*@ define:module:default_styling
 ---
 name: Default Styling
