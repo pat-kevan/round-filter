@@ -26,7 +26,7 @@ label: Default Style
 exampleItem: Santa hat
 exampleItemId: 1050
 */
-#define VAR_GLOBAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#c4000000";textAccent = 1;fontType = 1;showDespawn = true;
+#define VAR_GLOBAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#c4000000";textAccent = 1;fontType = 1;
 
 apply (true) {
     VAR_GLOBAL_CUSTOMSTYLE 
