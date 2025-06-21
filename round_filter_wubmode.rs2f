@@ -13,6 +13,7 @@ meta { name = "Round filter - Wub version"; description = "Modified version of J
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -141,6 +142,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -173,7 +175,8 @@ label: Prioritize Untradeables
 type: stringlist
 label: Items to always show first
 */
-#define VAR_MENU_SORT_ITEMS_FIRST []
+#define VAR_MENU_SORT_ITEMS_FIRST ["Overload (+)(4)","Prayer Enhance (+)(4)","Revitalisation (+)(4)","Xeric's aid (+)(4)"]
+
 
 
 
@@ -3953,6 +3956,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5828,6 +5832,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -6000,6 +6005,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6051,6 +6057,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE true
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -7046,6 +7053,7 @@ exampleItem: Contract of bloodied blows
 apply (name:CONST_YAMA_CONTRACTS_LIST) {
     VAR_YAMA_CONTRACTS_CUSTOMSTYLE
 }
+
 
 
 
@@ -11585,6 +11593,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -11640,6 +11649,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12438,6 +12448,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
