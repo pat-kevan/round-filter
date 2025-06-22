@@ -197,11 +197,23 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["broken arrow","old boot"]
+#define VAR_GLOBAL_HIDE ["broken arrow","old boot","raw bird meat","gold ring","curry leaf","red satchel","tea flask","empty candle lantern","chisel","bear fur","raw bear meat","pure essence","cosmic talisman","nature talisman"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
 }
+
+/*@ define:input:filtering
+type: stringlist
+label: Items to hide (unnoted only)
+group: Individual Items
+*/
+#define VAR_GLOBAL_UNNOTED_HIDE ["teak logs","plank","edible seaweed","logs","jug","coal","hammer","adamantite bar"]
+
+apply (name:VAR_GLOBAL_UNNOTED_HIDE && noted:false) {
+    hidden = true;
+}
+
 
 /*@ define:input:filtering
 type: stringlist
@@ -395,7 +407,7 @@ enum: [
   "Infernal ashes"
 ]
 */
-#define VAR_ASHES_HIDE ["Fiendish ashes","Vile ashes"]
+#define VAR_ASHES_HIDE ["Fiendish ashes","Vile ashes","Malicious ashes","Abyssal ashes"]
 
 apply (name:VAR_ASHES_HIDE) {
     hidden = true;
@@ -1556,28 +1568,28 @@ type: number
 label: Air rune minimum quantity
 group: Runes
 */
-#define VAR_AIR_RUNE_MIN_QUANTITY 500
+#define VAR_AIR_RUNE_MIN_QUANTITY 650
 
 /*@ define:input:runes
 type: number
 label: Water rune minimum quantity
 group: Runes
 */
-#define VAR_WATER_RUNE_MIN_QUANTITY 100
+#define VAR_WATER_RUNE_MIN_QUANTITY 650
 
 /*@ define:input:runes
 type: number
 label: Earth rune minimum quantity
 group: Runes
 */
-#define VAR_EARTH_RUNE_MIN_QUANTITY 100
+#define VAR_EARTH_RUNE_MIN_QUANTITY 650
 
 /*@ define:input:runes
 type: number
 label: Fire rune minimum quantity
 group: Runes
 */
-#define VAR_FIRE_RUNE_MIN_QUANTITY 100
+#define VAR_FIRE_RUNE_MIN_QUANTITY 150
 
 /*@ define:input:runes
 type: number
@@ -1647,7 +1659,7 @@ type: number
 label: Blood rune minimum quantity
 group: Runes
 */
-#define VAR_BLOOD_RUNE_MIN_QUANTITY 10
+#define VAR_BLOOD_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
@@ -3045,7 +3057,7 @@ enum: [
   "Snape grass seed"
 ]
 */
-#define VAR_FARMING_SEEDS_ALLOTMENT_HIDE ["Potato seed","Onion seed","Cabbage seed","Tomato seed"]
+#define VAR_FARMING_SEEDS_ALLOTMENT_HIDE ["Potato seed","Onion seed","Cabbage seed","Tomato seed","Sweetcorn seed","Strawberry seed","Watermelon seed"]
 
 apply (name:VAR_FARMING_SEEDS_ALLOTMENT_HIDE) {
     hidden = true;
@@ -8352,7 +8364,7 @@ label: Anti-venom
 group: Potions Styles
 exampleItem: Anti-venom(4)
 */
-#define VAR_ANTI_VENOM_CUSTOMSTYLE
+#define VAR_ANTI_VENOM_CUSTOMSTYLE textColor = "#ff76c799";textAccentColor = "#FF000000";menuTextColor = "#ff76c799";
 
 apply (name:"Anti-venom(*") {
     VAR_ANTI_VENOM_CUSTOMSTYLE 
@@ -8412,7 +8424,7 @@ label: Anti-venom+
 group: Potions Styles
 exampleItem: Anti-venom+(4)
 */
-#define VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE
+#define VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#ff76c799";textAccentColor = "#FF000000";menuTextColor = "#ff76c799";
 
 apply (name:"Anti-venom+(*") {
     VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE 
@@ -8420,13 +8432,13 @@ apply (name:"Anti-venom+(*") {
 
 /*@ define:input:individual_item_styles
 type: style
-label: Extended anti-venom+
+label: Extended anti-venom+ (+ araxyte venom sack)
 group: Potions Styles
 exampleItem: Extended anti-venom+(4)
 */
 #define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#ff76c799";textAccentColor = "#FF000000";menuTextColor = "#ff76c799";
 
-apply (name:"Extended anti-venom+(*") {
+apply (name:"Extended anti-venom+(*" || name:"Araxyte venom sack") {
     VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE 
 }
 
