@@ -197,7 +197,7 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["broken arrow","old boot","raw bird meat","gold ring","curry leaf","red satchel","tea flask","empty candle lantern","chisel","bear fur","raw bear meat","pure essence","cosmic talisman","nature talisman"]
+#define VAR_GLOBAL_HIDE ["broken arrow","leather gloves","old boot","raw bird meat","gold ring","curry leaf","red satchel","tea flask","empty candle lantern","chisel","bear fur","raw bear meat","pure essence","cosmic talisman","nature talisman","Crushed gem"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
@@ -5831,6 +5831,19 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
     hidden = true;
 }
 
+/*@ define:input:area_based_filtering
+type: enumlist
+label: H.A.M Hideout Item Hides
+group: H.A.M Hideout
+enum: [
+]
+*/
+
+#define VAR_HAM_HIDEOUT_HIDE ["Rusty sword","Cowhide","Buttons","Polished buttons","Feather","Ham cloak","Ham hood","Ham robe","Ham logo","Knife","Leather body","Raw chicken","Tinderbox"]
+
+apply (area:CONST_HAM_HIDEOUT && name:VAR_HAM_HIDEOUT_HIDE) {
+  hidden = true;
+}
 
 
 
@@ -12567,6 +12580,7 @@ name: Constants
 #define CONST_SLAYER_TUROTHS_AREA [0000, 0000, 0, 0000, 0000, 0]
 #define CONST_SLAYER_JELLIES_AREA [0000, 0000, 0, 0000, 0000, 0]
 #define CONST_SLAYER_BLOODVELDS_AREA [0000, 0000, 0, 0000, 0000, 0]
+#define CONST_HAM_HIDEOUT [3136, 9605, 0, 3190, 9658, 0]
 
 #define CONST_PRIF_SPAWN_AREA [3238, 6066, 0, 3284, 6102, 0]
 #define CONST_FALADOR_SPAWN_AREA [2958, 3335, 0, 2983, 3355, 0]
