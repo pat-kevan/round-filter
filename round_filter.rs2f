@@ -5839,7 +5839,7 @@ enum: [
 ]
 */
 
-#define VAR_HAM_HIDEOUT_HIDE ["Rusty sword","Cowhide","Buttons","Polished buttons","Feather","Ham cloak","Ham hood","Ham robe","Ham logo","Knife","Leather body","Raw chicken","Tinderbox"]
+#define VAR_HAM_HIDEOUT_HIDE ["Rusty sword","Cowhide","Buttons","Polished buttons","Feather","Ham cloak","Ham hood","Ham robe","Ham logo","Knife","Leather body","Raw chicken","Tinderbox","Iron ore","Damaged armour"]
 
 apply (area:CONST_HAM_HIDEOUT && name:VAR_HAM_HIDEOUT_HIDE) {
   hidden = true;
