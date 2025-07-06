@@ -197,7 +197,7 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["vial","broken arrow","leather gloves","old boot","raw bird meat","gold ring","curry leaf","red satchel","tea flask","empty candle lantern","chisel","bear fur","raw bear meat","pure essence","cosmic talisman","nature talisman","Crushed gem"]
+#define VAR_GLOBAL_HIDE ["Cowhide","Raw beef","Raw chicken","Feather","vial","broken arrow","leather gloves","old boot","raw bird meat","gold ring","curry leaf","red satchel","tea flask","empty candle lantern","chisel","bear fur","raw bear meat","pure essence","cosmic talisman","nature talisman","Crushed gem"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
