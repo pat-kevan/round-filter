@@ -7122,6 +7122,10 @@ apply (name:"Clue scroll (beginner)") {
     VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE 
 }
 
+apply (name:"Scroll box (beginner)") {
+  VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE 
+}
+
 /*@ define:input:individual_item_styles
 type: style
 label: Easy clue scroll custom style
@@ -7133,6 +7137,10 @@ exampleItemId: 2677
 
 apply (name:"Clue scroll (easy)") {
     VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
+}
+
+apply (name:"Scroll box (easy)") {
+  VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_item_styles
@@ -7148,6 +7156,10 @@ apply (name:"Clue scroll (medium)") {
     VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
 }
 
+apply (name:"Scroll box (medium)") {
+  VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
+}
+
 /*@ define:input:individual_item_styles
 type: style
 label: Hard clue scroll custom style
@@ -7159,6 +7171,10 @@ exampleItemId: 2722
 
 apply (name:"Clue scroll (hard)") {
     VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
+}
+
+apply (name:"Scroll box (hard)") {
+  VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_item_styles
@@ -7174,6 +7190,10 @@ apply (name:"Clue scroll (elite)") {
     VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
 }
 
+apply (name:"Scroll box (elite)") {
+  VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
+}
+
 /*@ define:input:individual_item_styles
 type: style
 label: Master clue scroll custom style
@@ -7185,6 +7205,10 @@ exampleItemId: 19835
 
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
+}
+
+apply (name:"Scroll box (master)") {
+  VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
 }
 
 
