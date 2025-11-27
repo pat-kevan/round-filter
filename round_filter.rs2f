@@ -5938,7 +5938,7 @@ type: stringlist
 label: Manually add items to tier 3
 group: Tier 3
 */
-#define VAR_VALUES_TIER_3_SHOW ["Forgotten lockbox","Noxious pommel","Noxious point","Noxious blade","Hydra's eye","Hydra's fang","Hydra's heart","Unsired","Bludgeon claw","Bludgeon spine","Bludgeon axon","Dark totem","Slepey tablet","Parasitic egg","Mystic vigour prayer scroll","Deadeye prayer scroll","Occult necklace","Abyssal whip","Warped sceptre","Granite ring","Granite hammer","Granite gloves","Dragon 2h sword","Dragon pickaxe","Scurrius' spine","Godsword shard 1","Godsword shard 2","Godsword shard 3","Awakener's orb"]
+#define VAR_VALUES_TIER_3_SHOW ["Dragon nails","Forgotten lockbox","Noxious pommel","Noxious point","Noxious blade","Hydra's eye","Hydra's fang","Hydra's heart","Unsired","Bludgeon claw","Bludgeon spine","Bludgeon axon","Dark totem","Slepey tablet","Parasitic egg","Mystic vigour prayer scroll","Deadeye prayer scroll","Occult necklace","Abyssal whip","Warped sceptre","Granite ring","Granite hammer","Granite gloves","Dragon 2h sword","Dragon pickaxe","Scurrius' spine","Godsword shard 1","Godsword shard 2","Godsword shard 3","Awakener's orb"]
 /*@ define:input:item_tiers
 type: style
 label: Tier 3 custom style
@@ -5966,7 +5966,7 @@ type: stringlist
 label: Manually add items to tier 4
 group: Tier 4
 */
-#define VAR_VALUES_TIER_4_SHOW ["Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Magus vestige","Eye of the duke","Araxyte fang","Tanzanite mutagen","Magma mutagen"]
+#define VAR_VALUES_TIER_4_SHOW ["Dragon metal sheet","Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Magus vestige","Eye of the duke","Araxyte fang","Tanzanite mutagen","Magma mutagen"]
 
 /*@ define:input:item_tiers
 type: style
