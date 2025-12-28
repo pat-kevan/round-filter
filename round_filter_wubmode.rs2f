@@ -1568,28 +1568,28 @@ type: number
 label: Air rune minimum quantity
 group: Runes
 */
-#define VAR_AIR_RUNE_MIN_QUANTITY 650
+#define VAR_AIR_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Water rune minimum quantity
 group: Runes
 */
-#define VAR_WATER_RUNE_MIN_QUANTITY 650
+#define VAR_WATER_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Earth rune minimum quantity
 group: Runes
 */
-#define VAR_EARTH_RUNE_MIN_QUANTITY 650
+#define VAR_EARTH_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
 label: Fire rune minimum quantity
 group: Runes
 */
-#define VAR_FIRE_RUNE_MIN_QUANTITY 150
+#define VAR_FIRE_RUNE_MIN_QUANTITY 100
 
 /*@ define:input:runes
 type: number
