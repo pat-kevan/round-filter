@@ -8,6 +8,7 @@ def blobularise():
             line = line.replace("icon = CurrentItem();", "")
             line = line.replace("fontType = 3;", "")
             line = line.replace("Round filter", "Round filter - Wub version")
+            line = line.replace("RUNE_MIN_QUANTITY 650", "RUNE_MIN_QUANTITY 100")
             processed_lines.append(line)
 
         with open('round_filter_wubmode.rs2f', 'w') as output_file:
