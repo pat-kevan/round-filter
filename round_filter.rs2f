@@ -5966,7 +5966,7 @@ type: stringlist
 label: Manually add items to tier 4
 group: Tier 4
 */
-#define VAR_VALUES_TIER_4_SHOW ["Dragon metal sheet","Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Magus vestige","Eye of the duke","Araxyte fang","Tanzanite mutagen","Magma mutagen"]
+#define VAR_VALUES_TIER_4_SHOW ["Elder venator fang","Crimson kisten","Dragon metal sheet","Venator vestige","Leviathan's lure","Bellator vestige","Siren's staff","Ultor vestige","Executioner's axe head","Magus vestige","Eye of the duke","Araxyte fang","Tanzanite mutagen","Magma mutagen"]
 
 /*@ define:input:item_tiers
 type: style
